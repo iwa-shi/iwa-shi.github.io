@@ -5,6 +5,7 @@ import ProfileArea from './profile';
 import ThemeConfig from '../theme';
 import GlobalStyles from '../theme/globalStyles';
 import { styled } from '@mui/material/styles';
+import Container from '@mui/material/Container';
 // import * as Scroll from 'react-scroll';
 // import { Link } from "react-scroll";
 
@@ -14,19 +15,21 @@ const RootStyle = styled('div')({
   overflow: 'hidden'
 });
 
-const APP_BAR_MOBILE = 2;
-const APP_BAR_DESKTOP = 2;
+const APP_BAR_MOBILE = 3;
+const APP_BAR_DESKTOP = 3;
 
 const MainStyle = styled('div')(({ theme }) => ({
   flexGrow: 1,
   overflow: 'auto',
   minHeight: '100%',
-  // paddingTop: APP_BAR_MOBILE,
+  paddingTop: APP_BAR_MOBILE,
+  paddingLeft: theme.spacing(2),
+  paddingRight: theme.spacing(2),
   paddingBottom: theme.spacing(0),
   [theme.breakpoints.up('lg')]: {
-    // paddingTop: APP_BAR_DESKTOP,
-    // paddingLeft: theme.spacing(1),
-    // paddingRight: theme.spacing(1)
+    paddingTop: APP_BAR_DESKTOP,
+    paddingLeft: theme.spacing(5),
+    paddingRight: theme.spacing(5)
   }
 }));
 
@@ -34,13 +37,15 @@ function App() {
   return (
     <>
     <ThemeConfig>
+      <ResponsiveAppBar></ResponsiveAppBar>
       <RootStyle>
         <MainStyle>
-        <ResponsiveAppBar></ResponsiveAppBar>
+        <Container maxWidth="lg" id="containerElement">
+
         <ProfileArea></ProfileArea>
-        <div>
-          Hello
-        </div>
+
+
+        </Container>
 
         </MainStyle>
       </RootStyle>
