@@ -56,8 +56,8 @@ const InfoBox = ({
 const ProfileArea = () => {
     return (
         <>
-            <Card>
-                <CardContent >
+            {/* <Container> */}
+                <Box>
                     <Box sx={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', alignItems: 'center'}}>
                         <Box sx={{ width: '25%', maxWidth: 220, mx: 2, minWidth: 150}}>
                             <img src="/IMG_3514.png" className='profileimg'>
@@ -93,12 +93,8 @@ const ProfileArea = () => {
                         </Grid>
                     </Grid>
                     </Box>
-                    
-                </CardContent>
-                
-                
-                
-            </Card>
+                </Box>
+            {/* </Container> */}
         </>
     )
 }

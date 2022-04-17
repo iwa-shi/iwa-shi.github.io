@@ -123,7 +123,8 @@ const palette = {
   divider: GREY[500_24],
   text: { primary: GREY[800], secondary: GREY[600], disabled: GREY[500] },
   // background: { paper: '#fff', default: '#fff', neutral: GREY[200] },
-  background: { paper: '#fff', default: '#eceff1', neutral: GREY[200] },
+  // background: { paper: '#fff', default: '#eceff1', neutral: GREY[200] },
+  background: { paper: '#fff', default: '#fff', neutral: GREY[200] },
   action: {
     active: GREY[600],
     hover: GREY[500_8],
