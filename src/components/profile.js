@@ -19,6 +19,39 @@ import SchoolOutlinedIcon from '@mui/icons-material/SchoolOutlined';
 import MailIcon from '@mui/icons-material/Mail';
 import MailOutlineIcon from '@mui/icons-material/MailOutline';
 import GitHubIcon from '@mui/icons-material/GitHub';
+import { Email, Google } from '@mui/icons-material';
+import GroupsIcon from '@mui/icons-material/Groups';
+
+const InfoIcon = ({
+    type
+}) => {
+    if (type === 'github') {
+        return <GitHubIcon></GitHubIcon>;
+    } else if (type === 'email') {
+        return <Email></Email>;
+    } else if (type === 'google') {
+        return <Google></Google>;
+    } else if (type === 'group') {
+        return <GroupsIcon></GroupsIcon>;
+    }
+}
+
+const InfoBox = ({
+    text,
+    icontype,
+    link='',
+}) => {
+    return (
+        <>
+            <Box sx={{ display: 'inline-flex', justifyContent: 'left', alignItems: 'center'}}>
+            <InfoIcon type={icontype}/>
+            <Typography variant='body2' sx={{ mx: 1 }}>
+                {text}
+            </Typography>
+            </Box>
+        </>
+    )
+};
 
 const ProfileArea = () => {
     return (
@@ -30,8 +63,8 @@ const ProfileArea = () => {
                             <img src="/IMG_3514.png" className='profileimg'>
                             </img>
                         </Box>
-                        <Box sx={{ minWidth: 300}}>
-                            <Typography variant='h1'>
+                        <Box >
+                            <Typography variant='h1' sx={{ mt: -1}}>
                                 Shoma Iwai
                             </Typography>
                             <Typography variant='h6' sx={{ mt: -1}}>
@@ -44,39 +77,23 @@ const ProfileArea = () => {
                             </Typography>
                         </Box>
                     </Box>
-
-                    <Grid container>
-                        <Grid item>
-                            <Card>
-                            <CardContent>
-                                <SchoolIcon></SchoolIcon>
-                                PhD Student, Tohoku University, Sendai, Japan
-                            </CardContent>
-                            </Card>
+                    <Box sx={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', alignItems: 'center', my: 1}}>
+                    <Grid container sx={{ maxWidth: 550, justifyContent: 'center'}} columns={{ xs: 14, md: 18 }}>
+                        <Grid item xs={9}>
+                            <InfoBox text="GitHub" icontype="github"/>
+                            </Grid>
+                        <Grid item xs={9}>
+                            <InfoBox text="shoma.iwai.s4(at)dc.tohoku.ac.jp" icontype="email"/>
                         </Grid>
-                        <Grid item>
-                            <Card>
-                            <GitHubIcon></GitHubIcon>
-                            GitHub
-                            </Card>
+                        <Grid item xs={9}>
+                            <InfoBox text="Google Scholer" icontype="google"/>
+                        </Grid>
+                        <Grid item xs={9}>
+                            <InfoBox text="Lab. Homepage" icontype="group"/>
                         </Grid>
                     </Grid>
-                
-                {/* <Grid container alignItems='center' maxWidth="md">
-                    <Grid item xs={3}>
-                        <img src="/IMG_3514.png" className='profileimg'>
-                        </img>
-                    </Grid>
-                    <Grid item xs={9}>
-                        <Typography variant='h1'>
-                            Shoma Iwai
-                        </Typography>
-                        <Typography variant='h4'>
-                            岩井 翔真
-                        </Typography>
-                    </Grid>
-
-                </Grid> */}
+                    </Box>
+                    
                 </CardContent>
                 
                 
