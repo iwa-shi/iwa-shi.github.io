@@ -7,6 +7,10 @@ import GlobalStyles from '../theme/globalStyles';
 import { styled } from '@mui/material/styles';
 import Container from '@mui/material/Container';
 import ResearchArea from './research';
+import EducationArea from './education';
+import { ClipLeftDown, ClipRightDown } from './clipContainer';
+import { Box, Stack } from '@mui/material';
+import PublicationArea from './publication';
 // import * as Scroll from 'react-scroll';
 // import { Link } from "react-scroll";
 
@@ -41,13 +45,21 @@ function App() {
       <ResponsiveAppBar></ResponsiveAppBar>
       <RootStyle>
         <MainStyle>
-        <Container maxWidth={false} id="containerElement" sx={{ px: 5 }}>
+        {/* <Container maxWidth={false} id="containerElement" sx={{ px: 5 }}> */}
+        {/* <Container maxWidth="100%" id="containerElement" sx={{ m: 0, p:0 }}> */}
+        <div>
+          <ClipLeftDown>
+            <ProfileArea></ProfileArea>
+          </ClipLeftDown>
+          <Stack sx={{maxWidth: 'md', mx: 'auto', px: 2}} spacing={3}>
+            <ResearchArea></ResearchArea>
+            <EducationArea></EducationArea>
+            <PublicationArea></PublicationArea>
+          </Stack>
+        </div>
+          
 
-          <ProfileArea></ProfileArea>
-          <ResearchArea></ResearchArea>
-
-
-        </Container>
+        {/* </Container> */}
 
         </MainStyle>
       </RootStyle>

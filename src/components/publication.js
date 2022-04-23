@@ -22,26 +22,34 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import { Email, Google } from '@mui/icons-material';
 import GroupsIcon from '@mui/icons-material/Groups';
 
+const PaperArea = ({
+    paperTitle,
+    authors,
+    others,
+}) => {
+    return (
+        <Box>
+            <Typography variant='body1'>{paperTitle}</Typography>
+            <Typography variant='body2'>{authors}</Typography>
+            <Typography variant='body2'>{others}</Typography>
+        </Box>
+    )
+}
 
-const ResearchArea = () => {
+const PublicationArea = () => {
     return (
         <Paper sx={{px: 5, py: 0.5}} className='left-border'>
-            <Typography variant='h4'><span className='title-marker'>Study and Research</span></Typography>
+            <Typography variant='h4'><span className='title-marker'>Publication</span></Typography>
             <Box sx={{m: 1}}>
-            <Typography variant='body1'>
-            I'm a first year PhD student at Tohoku University.
-            I'm studying <b>Learned Image Compression</b> at <a href="http://www.iic.ecei.tohoku.ac.jp/" target="_blank">Image Information Communication Lab</a>, 
-            where I am supervised by <a href="http://www.iic.ecei.tohoku.ac.jp/~machi/index-e.html" target="_blank">Prof. Shinichiro Omachi</a>.
-            </Typography>
-            </Box>
-            <Box sx={{m: 1}}>
-            <Typography variant='subtitle1'>Interests</Typography>
-            <Typography variant='body2'>
-            Machine Learning, Computer Vision, Image Compression, Generative Models
-            </Typography>
+                <Typography variant='subtitle1'>International Conference</Typography>
+                <PaperArea
+                    paperTitle="Self Texture Transfer Networks for Low Bitrate Image Compression"
+                    authors="Shoma Iwai, Tomo Miyazaki, Yoshihiro Sugaya, and Shinichiro Omachi."
+                    others="In Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) Workshops, 2021, pp. 1901-1905"
+                />
             </Box>
         </Paper>
     )
 }
 
-export default ResearchArea
+export default PublicationArea

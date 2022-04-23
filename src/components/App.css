@@ -40,3 +40,43 @@
 .profileimg {
   width: 100%;
 }
+
+/* .main-contents {
+  border-left: 2px #eee solid;
+} */
+
+.left-border {
+  border-left: 3px #eee solid;
+  border-radius: 0;
+}
+
+.title-marker {
+  background:linear-gradient(transparent 65%, #bfff7f 65%);
+}
+
+.Block {
+  /* background-color:#e0e0e0; */
+  background-color: white;
+  /* color:#ccc; */
+  /* padding: 30px 0 0px 0; */
+  padding-bottom: 50px;
+  margin-bottom: 30px;
+  /* box-shadow: 10px 10px 10px black; */
+  /* box-shadow: 10px 25px 55px red; */
+}
+
+.clip-shadow {
+  /* content: ''; */
+  /* background: inherit; */
+  filter: drop-shadow(0px 3px 3px rgba(114, 106, 90, 0.1));
+}
+
+.clip-rightdown {
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%);
+}
+
+.clip-leftdown {
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+}

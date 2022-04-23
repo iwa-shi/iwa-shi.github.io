@@ -23,25 +23,24 @@ import { Email, Google } from '@mui/icons-material';
 import GroupsIcon from '@mui/icons-material/Groups';
 
 
-const ResearchArea = () => {
+const EducationArea = () => {
     return (
         <Paper sx={{px: 5, py: 0.5}} className='left-border'>
-            <Typography variant='h4'><span className='title-marker'>Study and Research</span></Typography>
+            <Typography variant='h4'><span className='title-marker'>Education</span></Typography>
             <Box sx={{m: 1}}>
-            <Typography variant='body1'>
-            I'm a first year PhD student at Tohoku University.
-            I'm studying <b>Learned Image Compression</b> at <a href="http://www.iic.ecei.tohoku.ac.jp/" target="_blank">Image Information Communication Lab</a>, 
-            where I am supervised by <a href="http://www.iic.ecei.tohoku.ac.jp/~machi/index-e.html" target="_blank">Prof. Shinichiro Omachi</a>.
-            </Typography>
+                <Typography variant='subtitle1'>PhD in Engineering, April 2022 - Present</Typography>
+                <Typography variant='body2'>Department of Communication Engineering, Graduate School of Engineering, Tohoku University</Typography>
             </Box>
             <Box sx={{m: 1}}>
-            <Typography variant='subtitle1'>Interests</Typography>
-            <Typography variant='body2'>
-            Machine Learning, Computer Vision, Image Compression, Generative Models
-            </Typography>
+                <Typography variant='subtitle1'>MS in Engineering, April 2020 - March 2022</Typography>
+                <Typography variant='body2'>Department of Communication Engineering, Graduate School of Engineering, Tohoku University</Typography>
+            </Box>
+            <Box sx={{m: 1}}>
+                <Typography variant='subtitle1'>BS in Engineering, April 2016 - March 2020</Typography>
+                <Typography variant='body2'>Department of Electrical, Information and Physics Engineering, Tohoku University</Typography>
             </Box>
         </Paper>
     )
 }
 
-export default ResearchArea
+export default EducationArea
