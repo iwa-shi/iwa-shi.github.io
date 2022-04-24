@@ -57,14 +57,15 @@ const ProfileArea = () => {
     return (
         <>
             {/* <Container> */}
-                <Box>
+                <Box sx={{py: 2}}>
                     <Box sx={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', alignItems: 'center'}}>
-                        <Box sx={{ width: '25%', maxWidth: 220, mx: 2, minWidth: 150}}>
-                            <img src="/IMG_3514.png" className='profileimg'>
+                        <Box sx={{ width: '25%', maxWidth: 180, mx: 2, minWidth: 130}}>
+                            {/* <img src="/IMG_3514.png" className='profileimg'> */}
+                            <img src="/profile_circle_mini.jpg" className='profileimg'>
                             </img>
                         </Box>
                         <Box >
-                            <Typography variant='h1' sx={{ mt: -1}}>
+                            <Typography variant='h1' sx={{ mt: -1 }}>
                                 Shoma Iwai
                             </Typography>
                             <Typography variant='h6' sx={{ mt: -1}}>

@@ -22,36 +22,21 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import { Email, Google } from '@mui/icons-material';
 import GroupsIcon from '@mui/icons-material/Groups';
 
-const EducationBox = ({
-    title,
-    body,
-}) => {
-    return (
-        <Box sx={{m: 1}}>
-            <Typography variant='subtitle1'>{title}</Typography>
-            <Typography variant='body2'>{body}</Typography>
-        </Box>
-    )
-}
 
-const EducationArea = () => {
+const WorkExperienceArea = () => {
     return (
         <Paper sx={{px: 5, py: 0.5}} className='left-border'>
-            <Typography variant='h4'><span className='title-marker'>Education</span></Typography>
-            <EducationBox 
-                title="PhD in Engineering, April 2022 - Present"
-                body="Department of Communication Engineering, Graduate School of Engineering, Tohoku University"
-            />
-            <EducationBox 
-                title="M.S. in Engineering, April 2020 - March 2022"
-                body="Department of Communication Engineering, Graduate School of Engineering, Tohoku University"
-            />
-            <EducationBox 
-                title="B.S. in Engineering, April 2016 - March 2020"
-                body="Department of Electrical, Information and Physics Engineering, Tohoku University"
-            />
+            <Typography variant='h4'><span className='title-marker'>Work Experience</span></Typography>
+            <Box sx={{m: 1}}>
+                <Typography variant='subtitle1'>Research Assistant: Tohoku University</Typography>
+                <Typography variant='body2'>April 2021 - Present</Typography>
+            </Box>
+            <Box sx={{m: 1}}>
+                <Typography variant='subtitle1'>Internship: Sony Group Corporation</Typography>
+                <Typography variant='body2'>August 2020 - September 2020</Typography>
+            </Box>
         </Paper>
     )
 }
 
-export default EducationArea
+export default WorkExperienceArea

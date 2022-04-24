@@ -11,6 +11,9 @@ import EducationArea from './education';
 import { ClipLeftDown, ClipRightDown } from './clipContainer';
 import { Box, Stack } from '@mui/material';
 import PublicationArea from './publication';
+import WorkExperienceArea from './workExperience';
+import SkillArea from './skill';
+import AwardArea from './award';
 // import * as Scroll from 'react-scroll';
 // import { Link } from "react-scroll";
 
@@ -47,16 +50,19 @@ function App() {
         <MainStyle>
         {/* <Container maxWidth={false} id="containerElement" sx={{ px: 5 }}> */}
         {/* <Container maxWidth="100%" id="containerElement" sx={{ m: 0, p:0 }}> */}
-        <div>
+        <Box sx={{pb: 20}}>
           <ClipLeftDown>
             <ProfileArea></ProfileArea>
           </ClipLeftDown>
-          <Stack sx={{maxWidth: 'md', mx: 'auto', px: 2}} spacing={3}>
+          <Stack sx={{maxWidth: 'md', mx: 'auto', px: 2, pl: 5}} spacing={4}>
             <ResearchArea></ResearchArea>
             <EducationArea></EducationArea>
             <PublicationArea></PublicationArea>
+            <WorkExperienceArea></WorkExperienceArea>
+            <AwardArea></AwardArea>
+            <SkillArea></SkillArea>
           </Stack>
-        </div>
+        </Box>
           
 
         {/* </Container> */}

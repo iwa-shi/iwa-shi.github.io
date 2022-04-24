@@ -80,3 +80,32 @@
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
   clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
 }
+
+.skill-graph {
+  width: 100%;
+}
+
+.skill-graph-cell {
+  width: 7%;
+  height: 100%;
+  margin: 0 1px;
+  /* width: 20px; */
+  /* height: 20px; */
+  background-color: #eee;
+  border-radius: 3px;
+}
+.cell-on {
+  background-color: #005634;
+}
+
+.atcoder-blue {
+  color: blue;
+  font-weight: 600;
+}
+
+/* .green-font {
+  color: #005634;
+} */
+.bold {
+  font-weight: 700;
+}

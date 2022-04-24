@@ -22,36 +22,21 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import { Email, Google } from '@mui/icons-material';
 import GroupsIcon from '@mui/icons-material/Groups';
 
-const EducationBox = ({
-    title,
-    body,
-}) => {
-    return (
-        <Box sx={{m: 1}}>
-            <Typography variant='subtitle1'>{title}</Typography>
-            <Typography variant='body2'>{body}</Typography>
-        </Box>
-    )
-}
 
-const EducationArea = () => {
+const AwardArea = () => {
     return (
         <Paper sx={{px: 5, py: 0.5}} className='left-border'>
-            <Typography variant='h4'><span className='title-marker'>Education</span></Typography>
-            <EducationBox 
-                title="PhD in Engineering, April 2022 - Present"
-                body="Department of Communication Engineering, Graduate School of Engineering, Tohoku University"
-            />
-            <EducationBox 
-                title="M.S. in Engineering, April 2020 - March 2022"
-                body="Department of Communication Engineering, Graduate School of Engineering, Tohoku University"
-            />
-            <EducationBox 
-                title="B.S. in Engineering, April 2016 - March 2020"
-                body="Department of Electrical, Information and Physics Engineering, Tohoku University"
-            />
+            <Typography variant='h4'><span className='title-marker'>Award</span></Typography>
+            <Box sx={{m: 1}}>
+                <Typography variant='subtitle1'>Outstanding Student Award (Master's Course)</Typography>
+                <Typography variant='body2'>Group of Electrical Engineering, Communication Engineering, Electronic Engineering, and Information Engineering, Tohoku University, March 2022</Typography>
+            </Box>
+            <Box sx={{m: 1}}>
+                <Typography variant='subtitle1'>Presentation Award</Typography>
+                <Typography variant='body2'>MIRU2020 Young Researchers Program, August 2020</Typography>
+            </Box>
         </Paper>
     )
 }
 
-export default EducationArea
+export default AwardArea
