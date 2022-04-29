@@ -12,7 +12,7 @@ import Button from '@mui/material/Button';
 import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import Card from '@mui/material/Card';
-import { CardContent, CardMedia, CardHeader, Grid, Paper } from '@mui/material';
+import { CardContent, CardMedia, CardHeader, Grid, Paper, Link } from '@mui/material';
 import { maxWidth, typography } from '@mui/system';
 import SchoolIcon from '@mui/icons-material/School';
 import SchoolOutlinedIcon from '@mui/icons-material/SchoolOutlined';
@@ -30,7 +30,7 @@ const ResearchArea = () => {
             <SectionTitle title="Study and Research" />
             <Box sx={{m: 1}}>
             <Typography variant='body1'>
-            I'm a first year PhD student at Tohoku University. I'm studying <span className='green-font bold'>Learned Image Compression</span> at <a href="http://www.iic.ecei.tohoku.ac.jp/" target="_blank">Image Information Communication Lab</a>, where I am supervised by <a href="http://www.iic.ecei.tohoku.ac.jp/~machi/index-e.html" target="_blank">Prof. Shinichiro Omachi</a>.
+            I'm a first year PhD student at Tohoku University. I'm studying <span className='green-font bold'>Learned Image Compression</span> at <Link href="http://www.iic.ecei.tohoku.ac.jp/" target="_blank" color="inherit">Image Information Communication Lab</Link>, where I am supervised by <Link href="http://www.iic.ecei.tohoku.ac.jp/~machi/index-e.html" target="_blank" color="inherit">Prof. Shinichiro Omachi</Link>.
             </Typography>
             </Box>
             <Box sx={{m: 1}}>

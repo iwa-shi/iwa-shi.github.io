@@ -19,8 +19,6 @@ function responsiveFontSizes({ sm, md, lg }) {
 }
 
 const FONT_PRIMARY = 'Plus Jakarta Sans, Public Sans, sans-serif';
-// const FONT_PRIMARY = 'Public Sans, sans-serif';
-const JAKARTA = 'Plus Jakarta Sans'
 
 const typography = {
   fontFamily: FONT_PRIMARY,
@@ -28,7 +26,6 @@ const typography = {
   fontWeightMedium: 600,
   fontWeightBold: 700,
   h1: {
-    fontFamily: JAKARTA,
     fontWeight: 700,
     lineHeight: 80 / 64,
     fontSize: pxToRem(32),

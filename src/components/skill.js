@@ -12,7 +12,7 @@ import Button from '@mui/material/Button';
 import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import Card from '@mui/material/Card';
-import { CardContent, CardMedia, CardHeader, Grid, Paper } from '@mui/material';
+import { CardContent, CardMedia, CardHeader, Grid, Paper, Link } from '@mui/material';
 import { maxWidth, typography } from '@mui/system';
 import SchoolIcon from '@mui/icons-material/School';
 import SchoolOutlinedIcon from '@mui/icons-material/SchoolOutlined';
@@ -65,7 +65,7 @@ const AtCoderBox = () => {
         <>
         <Typography variant='subtitle1'>AtCoder (Competitive Programming)</Typography>
         <Box sx={{mx: 1, display: 'inline-flex', justifyContent: 'left', alignItems: 'center'}}>
-            <Typography variant='body1'>UserName: <a href='https://atcoder.jp/users/shoakg'>shoakg</a></Typography>
+            <Typography variant='body1'>UserName: <Link color="inherit" href='https://atcoder.jp/users/shoakg'>shoakg</Link></Typography>
             <Typography sx={{mx: 2}} variant='body1'>Rate: <span className='atcoder-blue'>1640</span></Typography>
         </Box>
         </>

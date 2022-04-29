@@ -19,8 +19,10 @@ import SchoolOutlinedIcon from '@mui/icons-material/SchoolOutlined';
 import MailIcon from '@mui/icons-material/Mail';
 import MailOutlineIcon from '@mui/icons-material/MailOutline';
 import GitHubIcon from '@mui/icons-material/GitHub';
+import PictureAsPdfIcon from '@mui/icons-material/PictureAsPdf';
 import { Email, Google } from '@mui/icons-material';
 import GroupsIcon from '@mui/icons-material/Groups';
+import LinkIcon from '@mui/icons-material/Link';
 import SectionTitle from './sectionTitle';
 var parse = require('html-react-parser');
 
@@ -28,13 +30,26 @@ const PaperBox = ({
     paperTitle,
     authors,
     others,
+    link='',
+    codeLink='',
+    pdfLink=''
 }) => {
+    const variant = "outlined"
+    // const variant = "contained"
+    // const variant = "text"
+    const buttonStyle = {
+        'px': 1.0,
+        'mr': 1.0
+    }
     return (
-        <Box sx={{ m: 1 }}>
+        <Card sx={{ my: 1, px: 2, py: 1, boxShadow: 0, border: 0, borderColor: '#b0bec5' }}>
             <Typography variant='subtitle2' fontWeight={700}>{paperTitle}</Typography>
             <Typography variant='body2'>{parse(authors)}</Typography>
             <Typography variant='body2'>{others}</Typography>
-        </Box>
+            {link ? <Button href={link} sx={buttonStyle} color="secondary" variant={variant} size="small" startIcon={<LinkIcon />}>Link</Button> : <></> }
+            {pdfLink ? <Button href={pdfLink} sx={buttonStyle} color="secondary" variant={variant} size="small" startIcon={<PictureAsPdfIcon />}>PDF</Button> : <></> }
+            {codeLink ? <Button href={codeLink} sx={buttonStyle} color="secondary" variant={variant} size="small" startIcon={<GitHubIcon />}>Code</Button> : <></> }
+        </Card>
     )
 }
 
@@ -45,16 +60,21 @@ const PublicationArea = () => {
             <Box sx={{m: 1}}>
                 {/* 国際会議 */}
                 <Box sx={{ my: 2 }}>
-                    <Typography variant='subtitle1'>International Conference</Typography>
+                    <Typography variant='h6'>International Conference</Typography>
                     <PaperBox
                         paperTitle="Self Texture Transfer Networks for Low Bitrate Image Compression"
                         authors="<u>Shoma Iwai</u>, Tomo Miyazaki, Yoshihiro Sugaya, and Shinichiro Omachi."
                         others="In Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) Workshops, 2021, pp. 1901-1905"
+                        link='https://openaccess.thecvf.com/content/CVPR2021W/CLIC/html/Iwai_Self_Texture_Transfer_Networks_for_Low_Bitrate_Image_Compression_CVPRW_2021_paper.html'
+                        pdfLink='https://openaccess.thecvf.com/content/CVPR2021W/CLIC/papers/Iwai_Self_Texture_Transfer_Networks_for_Low_Bitrate_Image_Compression_CVPRW_2021_paper.pdf'
                     />
                     <PaperBox
                         paperTitle="Fidelity-controllable Extreme Image Compression with Generative Adversarial Networks (oral)"
                         authors="<u>Shoma Iwai</u>, Tomo Miyazaki, Yoshihiro Sugaya, and Shinichiro Omachi."
                         others="In Proceedings of the 25th International Conference on Pattern Recognition (ICPR), 2020, pp. 8235-8242"
+                        link='https://arxiv.org/abs/2008.10314'
+                        codeLink='https://github.com/iwa-shi/fidelity_controllable_compression'
+                        pdfLink='https://arxiv.org/pdf/2008.10314.pdf'
                     />
                     <PaperBox
                         paperTitle="Two-Stage Training for High-Fidelity Image Compression with Generative Adversarial Networks "
@@ -63,7 +83,7 @@ const PublicationArea = () => {
                     />
                 </Box>
                 <Box sx={{ my: 2 }}>
-                    <Typography variant='subtitle1'>Domestic Conference</Typography>
+                    <Typography variant='h6'>Domestic Conference</Typography>
                     <PaperBox
                         paperTitle="参照型超解像による特徴転移を利用した高品質な画像符号化"
                         authors="<u>岩井翔真</u>, 宮崎智, 菅谷至寛, 大町真一郎."

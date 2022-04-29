@@ -54,7 +54,7 @@ function App() {
           <ClipLeftDown>
             <ProfileArea></ProfileArea>
           </ClipLeftDown>
-          <Stack sx={{maxWidth: 'md', mx: 'auto', px: 2, pl: 5}} spacing={4} className='main-content'>
+          <Stack sx={{maxWidth: 'md', mx: 'auto', px: 2, pl: 5}} spacing={4}>
             <ResearchArea></ResearchArea>
             <EducationArea></EducationArea>
             <PublicationArea></PublicationArea>
