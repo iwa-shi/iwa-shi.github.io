@@ -21,6 +21,7 @@ import MailOutlineIcon from '@mui/icons-material/MailOutline';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import { Email, Google } from '@mui/icons-material';
 import GroupsIcon from '@mui/icons-material/Groups';
+import SectionTitle from './sectionTitle';
 var parse = require('html-react-parser');
 
 const PaperBox = ({
@@ -40,7 +41,7 @@ const PaperBox = ({
 const PublicationArea = () => {
     return (
         <Paper sx={{px: 5, py: 0.5}} className='left-border'>
-            <Typography variant='h4'><span className='title-marker'>Publication</span></Typography>
+            <SectionTitle title="Publication" />
             <Box sx={{m: 1}}>
                 {/* 国際会議 */}
                 <Box sx={{ my: 2 }}>

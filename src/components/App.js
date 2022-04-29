@@ -45,7 +45,7 @@ function App() {
   return (
     <>
     <ThemeConfig>
-      <ResponsiveAppBar></ResponsiveAppBar>
+      {/* <ResponsiveAppBar></ResponsiveAppBar> */}
       <RootStyle>
         <MainStyle>
         {/* <Container maxWidth={false} id="containerElement" sx={{ px: 5 }}> */}
@@ -54,7 +54,7 @@ function App() {
           <ClipLeftDown>
             <ProfileArea></ProfileArea>
           </ClipLeftDown>
-          <Stack sx={{maxWidth: 'md', mx: 'auto', px: 2, pl: 5}} spacing={4}>
+          <Stack sx={{maxWidth: 'md', mx: 'auto', px: 2, pl: 5}} spacing={4} className='main-content'>
             <ResearchArea></ResearchArea>
             <EducationArea></EducationArea>
             <PublicationArea></PublicationArea>

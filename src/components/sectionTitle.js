@@ -21,26 +21,15 @@ import MailOutlineIcon from '@mui/icons-material/MailOutline';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import { Email, Google } from '@mui/icons-material';
 import GroupsIcon from '@mui/icons-material/Groups';
-import SectionTitle from './sectionTitle';
 
 
-const ResearchArea = () => {
+const SectionTitle = ({
+    title
+}) => {
     return (
-        <Paper sx={{px: 5, py: 0.5}} className='left-border'>
-            <SectionTitle title="Study and Research" />
-            <Box sx={{m: 1}}>
-            <Typography variant='body1'>
-            I'm a first year PhD student at Tohoku University. I'm studying <span className='green-font bold'>Learned Image Compression</span> at <a href="http://www.iic.ecei.tohoku.ac.jp/" target="_blank">Image Information Communication Lab</a>, where I am supervised by <a href="http://www.iic.ecei.tohoku.ac.jp/~machi/index-e.html" target="_blank">Prof. Shinichiro Omachi</a>.
-            </Typography>
-            </Box>
-            <Box sx={{m: 1}}>
-            <Typography variant='subtitle1'>Interests</Typography>
-            <Typography variant='body2'>
-            Machine Learning, Computer Vision, Image Compression, Generative Models
-            </Typography>
-            </Box>
-        </Paper>
+        // <Typography variant='h4' color='grey.600'><span className='title-marker'>{title}</span></Typography>
+        <Typography variant='h4' ><span className='title-marker'>{title}</span></Typography>
     )
 }
 
-export default ResearchArea
+export default SectionTitle

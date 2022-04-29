@@ -21,12 +21,13 @@ import MailOutlineIcon from '@mui/icons-material/MailOutline';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import { Email, Google } from '@mui/icons-material';
 import GroupsIcon from '@mui/icons-material/Groups';
+import SectionTitle from './sectionTitle';
 
 
 const AwardArea = () => {
     return (
         <Paper sx={{px: 5, py: 0.5}} className='left-border'>
-            <Typography variant='h4'><span className='title-marker'>Award</span></Typography>
+            <SectionTitle title='Award' />
             <Box sx={{m: 1}}>
                 <Typography variant='subtitle1'>Outstanding Student Award (Master's Course)</Typography>
                 <Typography variant='body2'>Group of Electrical Engineering, Communication Engineering, Electronic Engineering, and Information Engineering, Tohoku University, March 2022</Typography>

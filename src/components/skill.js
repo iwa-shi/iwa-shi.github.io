@@ -22,6 +22,7 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import { Email, Google } from '@mui/icons-material';
 import GroupsIcon from '@mui/icons-material/Groups';
 import InfoOutlinedIcon from '@mui/icons-material/InfoOutlined';
+import SectionTitle from './sectionTitle';
 // import Card from '../theme/overrides/Card';
 
 const SkillGraph = ({
@@ -74,7 +75,7 @@ const AtCoderBox = () => {
 const SkillArea = () => {
     return (
         <Paper sx={{px: 5, py: 0.5}} className='left-border'>
-            <Typography variant='h4'><span className='title-marker'>Skills</span></Typography>
+            <SectionTitle title="Skills" />
             <Grid container sx={{ mx: 1, alignItems: 'stretch'}} spacing={1}>
                 <Grid item xs={6} md={3}>
                     <SkillBox 
@@ -127,7 +128,7 @@ const SkillArea = () => {
                 <Grid item xs={6} md={3}>
                     <SkillBox
                         title="React"
-                        level={6}
+                        level={5}
                     />
                 </Grid>
                 <Grid item xs={6} md={3}>

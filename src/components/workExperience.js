@@ -21,12 +21,13 @@ import MailOutlineIcon from '@mui/icons-material/MailOutline';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import { Email, Google } from '@mui/icons-material';
 import GroupsIcon from '@mui/icons-material/Groups';
+import SectionTitle from './sectionTitle';
 
 
 const WorkExperienceArea = () => {
     return (
         <Paper sx={{px: 5, py: 0.5}} className='left-border'>
-            <Typography variant='h4'><span className='title-marker'>Work Experience</span></Typography>
+            <SectionTitle title='Work Experience' />
             <Box sx={{m: 1}}>
                 <Typography variant='subtitle1'>Research Assistant: Tohoku University</Typography>
                 <Typography variant='body2'>April 2021 - Present</Typography>

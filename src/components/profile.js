@@ -42,14 +42,16 @@ const InfoBox = ({
     link='',
 }) => {
     return (
-        <>
-            <Box sx={{ display: 'inline-flex', justifyContent: 'left', alignItems: 'center'}}>
-            <InfoIcon type={icontype}/>
-            <Typography variant='body2' sx={{ mx: 1 }}>
-                {text}
-            </Typography>
-            </Box>
-        </>
+        // <Box className="prof-link">
+            <a href={link} className="prof-link">
+                <Box sx={{ display: 'inline-flex', justifyContent: 'left', alignItems: 'center', px: 1, py: 0.5}} className="prof-link-box">
+                    <InfoIcon type={icontype}/>
+                    <Typography variant='body1' sx={{ mx: 0.5 }}>
+                        {text}
+                    </Typography>
+                </Box>
+            </a>
+        // </Box>
     )
 };
 
@@ -81,16 +83,16 @@ const ProfileArea = () => {
                     <Box sx={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', alignItems: 'center', my: 1}}>
                     <Grid container sx={{ maxWidth: 550, justifyContent: 'center'}} columns={{ xs: 14, md: 18 }}>
                         <Grid item xs={9}>
-                            <InfoBox text="GitHub" icontype="github"/>
+                            <InfoBox text="GitHub" icontype="github" link='https://github.com/iwa-shi'/>
                             </Grid>
                         <Grid item xs={9}>
-                            <InfoBox text="shoma.iwai.s4(at)dc.tohoku.ac.jp" icontype="email"/>
+                            <InfoBox text="shoma.iwai.s4(at)dc.tohoku.ac.jp" icontype="email" link='mailto:shoma.iwai.s4@dc.tohoku.ac.jp'/>
                         </Grid>
                         <Grid item xs={9}>
-                            <InfoBox text="Google Scholer" icontype="google"/>
+                            <InfoBox text="Google Scholer" icontype="google" link='https://scholar.google.com/citations?user=jCVwlyIAAAAJ&'/>
                         </Grid>
                         <Grid item xs={9}>
-                            <InfoBox text="Lab. Homepage" icontype="group"/>
+                            <InfoBox text="Lab. Homepage" icontype="group" link='http://www.iic.ecei.tohoku.ac.jp/index.html' />
                         </Grid>
                     </Grid>
                     </Box>

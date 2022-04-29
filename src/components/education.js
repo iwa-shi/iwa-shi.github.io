@@ -21,6 +21,7 @@ import MailOutlineIcon from '@mui/icons-material/MailOutline';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import { Email, Google } from '@mui/icons-material';
 import GroupsIcon from '@mui/icons-material/Groups';
+import SectionTitle from './sectionTitle';
 
 const EducationBox = ({
     title,
@@ -37,7 +38,7 @@ const EducationBox = ({
 const EducationArea = () => {
     return (
         <Paper sx={{px: 5, py: 0.5}} className='left-border'>
-            <Typography variant='h4'><span className='title-marker'>Education</span></Typography>
+            <SectionTitle title="Education" />
             <EducationBox 
                 title="PhD in Engineering, April 2022 - Present"
                 body="Department of Communication Engineering, Graduate School of Engineering, Tohoku University"
