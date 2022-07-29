@@ -85,6 +85,16 @@ const PublicationArea = () => {
                 <Box sx={{ my: 2 }}>
                     <Typography variant='h6'>Domestic Conference</Typography>
                     <PaperBox
+                        paperTitle="GANを使った画像符号化における識別器に関する検討"
+                        authors="<u>岩井翔真</u>, 宮崎智, 大町真一郎."
+                        others="画像の認識・理解シンポジウム MIRU2022"
+                    />
+                    <PaperBox
+                        paperTitle="少数くずし字データ補強のための画像生成に関する検討"
+                        authors="阿部楓也, <u>岩井翔真</u>, 宮崎智, 大町真一郎."
+                        others="画像の認識・理解シンポジウム MIRU2022"
+                    />
+                    <PaperBox
                         paperTitle="参照型超解像による特徴転移を利用した高品質な画像符号化"
                         authors="<u>岩井翔真</u>, 宮崎智, 菅谷至寛, 大町真一郎."
                         others="画像の認識・理解シンポジウム MIRU2021"
