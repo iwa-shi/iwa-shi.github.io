@@ -22,17 +22,22 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import { Email, Google } from '@mui/icons-material';
 import GroupsIcon from '@mui/icons-material/Groups';
 import SectionTitle from './sectionTitle';
+import Link from '@mui/material/Link';
 
 
 const AwardArea = () => {
     return (
         <Paper sx={{px: 5, py: 0.5}} className='left-border'>
             <SectionTitle title='Award' />
-            <Box sx={{m: 1}}>
+            <Box sx={{m: 1, my: 2}}>
+                <Typography variant='subtitle1'><Link color="inherit" href="https://sites.google.com/view/miru2022/home/award?authuser=0">論文評価貢献賞</Link></Typography>
+                <Typography variant='body2'>画像の認識・理解シンポジウム MIRU2022, July 2022</Typography> 
+            </Box>
+            <Box sx={{m: 1, my: 2}}>
                 <Typography variant='subtitle1'>Outstanding Student Award (Master's Course)</Typography>
                 <Typography variant='body2'>Group of Electrical Engineering, Communication Engineering, Electronic Engineering, and Information Engineering, Tohoku University, March 2022</Typography>
             </Box>
-            <Box sx={{m: 1}}>
+            <Box sx={{m: 1, my: 2}}>
                 <Typography variant='subtitle1'>Presentation Award</Typography>
                 <Typography variant='body2'>MIRU2020 Young Researchers Program, August 2020</Typography>
             </Box>
