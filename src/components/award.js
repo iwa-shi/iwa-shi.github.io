@@ -23,15 +23,25 @@ import { Email, Google } from '@mui/icons-material';
 import GroupsIcon from '@mui/icons-material/Groups';
 import SectionTitle from './sectionTitle';
 import Link from '@mui/material/Link';
+import LinkIcon from '@mui/icons-material/Link';
 
 
 const AwardArea = () => {
+    const variant = "outlined"
+    // const variant = "contained"
+    // const variant = "text"
+    const buttonStyle = {
+        'px': 1.0,
+        'mr': 1.0
+    }
+    const link = "https://sites.google.com/view/miru2022/home/award?authuser=0";
     return (
         <Paper sx={{px: 5, py: 0.5}} className='left-border'>
             <SectionTitle title='Award' />
             <Box sx={{m: 1, my: 2}}>
-                <Typography variant='subtitle1'><Link color="inherit" href="https://sites.google.com/view/miru2022/home/award?authuser=0">論文評価貢献賞</Link></Typography>
+                <Typography variant='subtitle1'>論文評価貢献賞 -ジュニア評価委員 (Outstanding Junior Reviewer Award)</Typography>
                 <Typography variant='body2'>画像の認識・理解シンポジウム MIRU2022, July 2022</Typography> 
+                <Button href={link} sx={buttonStyle} color="secondary" variant={variant}  size="small" startIcon={<LinkIcon />}>Link</Button>
             </Box>
             <Box sx={{m: 1, my: 2}}>
                 <Typography variant='subtitle1'>Outstanding Student Award (Master's Course)</Typography>

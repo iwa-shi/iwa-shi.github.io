@@ -30,7 +30,7 @@ const ResearchArea = () => {
             <SectionTitle title="Study and Research" />
             <Box sx={{m: 1}}>
             <Typography variant='body1'>
-            I'm a first year PhD student at Tohoku University. I'm studying <span className='green-font bold'>Learned Image Compression</span> at <Link href="http://www.iic.ecei.tohoku.ac.jp/" target="_blank" color="inherit">Image Information Communication Lab</Link>, where I am supervised by <Link href="http://www.iic.ecei.tohoku.ac.jp/~machi/index-e.html" target="_blank" color="inherit">Prof. Shinichiro Omachi</Link>.
+            I'm a second year PhD student at Tohoku University. I'm studying <span className='green-font bold'>Learned Image Compression</span> at <Link href="http://www.iic.ecei.tohoku.ac.jp/" target="_blank" color="inherit">Image Information Communication Lab</Link>, where I am supervised by <Link href="http://www.iic.ecei.tohoku.ac.jp/~machi/index-e.html" target="_blank" color="inherit">Prof. Shinichiro Omachi</Link>.
             </Typography>
             </Box>
             <Box sx={{m: 1}}>

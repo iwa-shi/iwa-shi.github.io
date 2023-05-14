@@ -33,6 +33,10 @@ const WorkExperienceArea = () => {
                 <Typography variant='body2'>April 2021 - Present</Typography>
             </Box>
             <Box sx={{m: 1}}>
+                <Typography variant='subtitle1'>Internship: Huawei Japan Tokyo Laboratory</Typography>
+                <Typography variant='body2'>August 2022 - November 2022</Typography>
+            </Box>
+            <Box sx={{m: 1}}>
                 <Typography variant='subtitle1'>Internship: Sony Group Corporation</Typography>
                 <Typography variant='body2'>August 2020 - September 2020</Typography>
             </Box>
