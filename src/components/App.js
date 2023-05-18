@@ -14,6 +14,7 @@ import PublicationArea from './publication';
 import WorkExperienceArea from './workExperience';
 import SkillArea from './skill';
 import AwardArea from './award';
+import OthersArea from './others';
 // import * as Scroll from 'react-scroll';
 // import { Link } from "react-scroll";
 
@@ -55,12 +56,13 @@ function App() {
             <ProfileArea></ProfileArea>
           </ClipLeftDown>
           <Stack sx={{maxWidth: 'md', mx: 'auto', px: 2, pl: 5}} spacing={4}>
-            <ResearchArea></ResearchArea>
-            <EducationArea></EducationArea>
-            <PublicationArea></PublicationArea>
-            <WorkExperienceArea></WorkExperienceArea>
-            <AwardArea></AwardArea>
-            <SkillArea></SkillArea>
+            <ResearchArea />
+            <EducationArea />
+            <PublicationArea />
+            <WorkExperienceArea />
+            <AwardArea />
+            <SkillArea />
+            <OthersArea />
           </Stack>
         </Box>
           

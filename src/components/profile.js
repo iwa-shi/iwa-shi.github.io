@@ -40,14 +40,18 @@ const InfoBox = ({
 };
 
 const ProfileArea = () => {
+    const boxStyle = {
+        py: 5,
+    }
     return (
         <>
             {/* <Container> */}
-                <Box sx={{py: 5}}>
+                <Box sx={boxStyle}>
                     <Box sx={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', alignItems: 'center'}}>
                         <Box sx={{ width: '25%', maxWidth: 180, mx: 2, minWidth: 130}}>
                             {/* <img src="/IMG_3514.png" className='profileimg'> */}
                             <img src="/profile_circle_mini.jpg" className='profileimg'>
+                            {/* <img src="/profile_circle_marathon.jpg" className='profileimg'> */}
                             </img>
                         </Box>
                         <Box >
