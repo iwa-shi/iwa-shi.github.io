@@ -72,6 +72,17 @@ const AtCoderBox = () => {
     )
 }
 
+const ToeicBox = () => {
+    return (
+        <>
+        <Typography variant='subtitle1'>Language (Engligh)</Typography>
+        <Box sx={{mx: 1, display: 'inline-flex', justifyContent: 'left', alignItems: 'center'}}>
+            <Typography variant='body1'>TOEIC score: 940, May 2023</Typography>
+        </Box>
+        </>
+    )
+}
+
 const SkillArea = () => {
     return (
         <Paper sx={{px: 5, py: 0.5}} className='left-border'>
@@ -158,6 +169,9 @@ const SkillArea = () => {
             </Box>
             <Box sx={{m: 1, mt: 2}}>
                 <AtCoderBox />
+            </Box>
+            <Box sx={{m: 1, mt: 2}}>
+                <ToeicBox />
             </Box>
         </Paper>
     )
