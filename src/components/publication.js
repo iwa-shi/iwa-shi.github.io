@@ -62,9 +62,16 @@ const PublicationArea = () => {
                 <Box sx={{ my: 2 }}>
                     <Typography variant='h6'>International Conference</Typography>
                     <PaperBox
+                        paperTitle="Controlling Rate, Distortion, and Realism: Towards a Single Comprehensive Neural Image Compression Model"
+                        authors="<u>Shoma Iwai</u>, Tomo Miyazaki, and Shinichiro Omachi."
+                        others="In Proceedings of IEEE/CVF Winter Conference on Applications of Computer Vision (WACV) , 2024"
+                        // link='https://openaccess.thecvf.com/content/CVPR2021W/CLIC/html/Iwai_Self_Texture_Transfer_Networks_for_Low_Bitrate_Image_Compression_CVPRW_2021_paper.html'
+                        // pdfLink='https://openaccess.thecvf.com/content/CVPR2021W/CLIC/papers/Iwai_Self_Texture_Transfer_Networks_for_Low_Bitrate_Image_Compression_CVPRW_2021_paper.pdf'
+                    />
+                    <PaperBox
                         paperTitle="Self Texture Transfer Networks for Low Bitrate Image Compression"
                         authors="<u>Shoma Iwai</u>, Tomo Miyazaki, Yoshihiro Sugaya, and Shinichiro Omachi."
-                        others="In Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) Workshops, 2021, pp. 1901-1905"
+                        others="In Proceedings of IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) Workshops, 2021, pp. 1901-1905"
                         link='https://openaccess.thecvf.com/content/CVPR2021W/CLIC/html/Iwai_Self_Texture_Transfer_Networks_for_Low_Bitrate_Image_Compression_CVPRW_2021_paper.html'
                         pdfLink='https://openaccess.thecvf.com/content/CVPR2021W/CLIC/papers/Iwai_Self_Texture_Transfer_Networks_for_Low_Bitrate_Image_Compression_CVPRW_2021_paper.pdf'
                     />
@@ -84,6 +91,16 @@ const PublicationArea = () => {
                 </Box>
                 <Box sx={{ my: 2 }}>
                     <Typography variant='h6'>Domestic Conference</Typography>
+                    <PaperBox
+                        paperTitle="GANを使ったマルチレート画像符号化モデルのための学習戦略の検討"
+                        authors="<u>岩井翔真</u>, 宮崎智, 大町真一郎."
+                        others="画像の認識・理解シンポジウム MIRU2023"
+                    />
+                    <PaperBox
+                        paperTitle="生成画像を利用した少数データくずし字認識に関する検討"
+                        authors="阿部楓也, <u>岩井翔真</u>, 宮崎智, 大町真一郎."
+                        others="画像の認識・理解シンポジウム MIRU2023"
+                    />
                     <PaperBox
                         paperTitle="GANを使った画像符号化における識別器に関する検討"
                         authors="<u>岩井翔真</u>, 宮崎智, 大町真一郎."

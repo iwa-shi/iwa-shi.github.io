@@ -34,14 +34,20 @@ const AwardArea = () => {
         'px': 1.0,
         'mr': 1.0
     }
-    const link = "https://sites.google.com/view/miru2022/home/award?authuser=0";
+    const linkMiru22 = "https://sites.google.com/view/miru2022/home/award?authuser=0";
+    const linkMiru23 = "http://cvim.ipsj.or.jp/MIRU2023/award/";
     return (
         <Paper sx={{px: 5, py: 0.5}} className='left-border'>
             <SectionTitle title='Award' />
             <Box sx={{m: 1, my: 2}}>
                 <Typography variant='subtitle1'>論文評価貢献賞 -ジュニア評価委員 (Outstanding Junior Reviewer Award)</Typography>
+                <Typography variant='body2'>画像の認識・理解シンポジウム MIRU2023, July 2023</Typography> 
+                <Button href={linkMiru23} sx={buttonStyle} color="secondary" variant={variant}  size="small" startIcon={<LinkIcon />}>Link</Button>
+            </Box>
+            <Box sx={{m: 1, my: 2}}>
+                <Typography variant='subtitle1'>論文評価貢献賞 -ジュニア評価委員 (Outstanding Junior Reviewer Award)</Typography>
                 <Typography variant='body2'>画像の認識・理解シンポジウム MIRU2022, July 2022</Typography> 
-                <Button href={link} sx={buttonStyle} color="secondary" variant={variant}  size="small" startIcon={<LinkIcon />}>Link</Button>
+                <Button href={linkMiru22} sx={buttonStyle} color="secondary" variant={variant}  size="small" startIcon={<LinkIcon />}>Link</Button>
             </Box>
             <Box sx={{m: 1, my: 2}}>
                 <Typography variant='subtitle1'>Outstanding Student Award (Master's Course)</Typography>
