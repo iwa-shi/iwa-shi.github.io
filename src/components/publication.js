@@ -92,6 +92,11 @@ const PublicationArea = () => {
                 <Box sx={{ my: 2 }}>
                     <Typography variant='h6'>Domestic Conference</Typography>
                     <PaperBox
+                        paperTitle="学習済みVQGANを活用した深層画像符号化手法の検討"
+                        authors="<u>岩井翔真</u>, 宮崎智, 大町真一郎."
+                        others="2023年度画像符号化シンポジウム/映像メディア処理シンポジウム（PCSJ/IMPS2023）"
+                    />
+                    <PaperBox
                         paperTitle="GANを使ったマルチレート画像符号化モデルのための学習戦略の検討"
                         authors="<u>岩井翔真</u>, 宮崎智, 大町真一郎."
                         others="画像の認識・理解シンポジウム MIRU2023"
