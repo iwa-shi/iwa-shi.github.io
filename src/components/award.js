@@ -32,13 +32,20 @@ const AwardArea = () => {
     // const variant = "text"
     const buttonStyle = {
         'px': 1.0,
+        'py': 0.2,
         'mr': 1.0
     }
     const linkMiru22 = "https://sites.google.com/view/miru2022/home/award?authuser=0";
     const linkMiru23 = "http://cvim.ipsj.or.jp/MIRU2023/award/";
+    const linkPcsj23 = "https://www.pcsj-imps.org/archive/2023awards.html";
     return (
         <Paper sx={{px: 5, py: 0.5}} className='left-border'>
             <SectionTitle title='Award' />
+            <Box sx={{m: 1, my: 2}}>
+                <Typography variant='subtitle1'>ベストポスター賞 (Best Poster Award)</Typography>
+                <Typography variant='body2'>画像符号化シンポジウム / 映像メディア処理シンポジウム PCSJ/IMPS2023, November 2023</Typography> 
+                <Button href={linkPcsj23} sx={buttonStyle} color="secondary" variant={variant}  size="small" startIcon={<LinkIcon />}>Link</Button>
+            </Box>
             <Box sx={{m: 1, my: 2}}>
                 <Typography variant='subtitle1'>論文評価貢献賞 -ジュニア評価委員 (Outstanding Junior Reviewer Award)</Typography>
                 <Typography variant='body2'>画像の認識・理解シンポジウム MIRU2023, July 2023</Typography> 

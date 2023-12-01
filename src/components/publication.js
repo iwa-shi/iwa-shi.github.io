@@ -39,6 +39,7 @@ const PaperBox = ({
     // const variant = "text"
     const buttonStyle = {
         'px': 1.0,
+        'py': 0.2,
         'mr': 1.0
     }
     return (
@@ -62,7 +63,7 @@ const PublicationArea = () => {
                 <Box sx={{ my: 2 }}>
                     <Typography variant='h6'>International Conference</Typography>
                     <PaperBox
-                        paperTitle="Controlling Rate, Distortion, and Realism: Towards a Single Comprehensive Neural Image Compression Model"
+                        paperTitle="Controlling Rate, Distortion, and Realism: Towards a Single Comprehensive Neural Image Compression Model (Oral)"
                         authors="<u>Shoma Iwai</u>, Tomo Miyazaki, and Shinichiro Omachi."
                         others="In Proceedings of IEEE/CVF Winter Conference on Applications of Computer Vision (WACV) , 2024"
                         // link='https://openaccess.thecvf.com/content/CVPR2021W/CLIC/html/Iwai_Self_Texture_Transfer_Networks_for_Low_Bitrate_Image_Compression_CVPRW_2021_paper.html'
@@ -76,7 +77,7 @@ const PublicationArea = () => {
                         pdfLink='https://openaccess.thecvf.com/content/CVPR2021W/CLIC/papers/Iwai_Self_Texture_Transfer_Networks_for_Low_Bitrate_Image_Compression_CVPRW_2021_paper.pdf'
                     />
                     <PaperBox
-                        paperTitle="Fidelity-controllable Extreme Image Compression with Generative Adversarial Networks (oral)"
+                        paperTitle="Fidelity-controllable Extreme Image Compression with Generative Adversarial Networks (Oral)"
                         authors="<u>Shoma Iwai</u>, Tomo Miyazaki, Yoshihiro Sugaya, and Shinichiro Omachi."
                         others="In Proceedings of the 25th International Conference on Pattern Recognition (ICPR), 2020, pp. 8235-8242"
                         link='https://arxiv.org/abs/2008.10314'
@@ -94,7 +95,7 @@ const PublicationArea = () => {
                     <PaperBox
                         paperTitle="学習済みVQGANを活用した深層画像符号化手法の検討"
                         authors="<u>岩井翔真</u>, 宮崎智, 大町真一郎."
-                        others="2023年度画像符号化シンポジウム/映像メディア処理シンポジウム（PCSJ/IMPS2023）"
+                        others="2023年度画像符号化シンポジウム/映像メディア処理シンポジウム（PCSJ/IMPS2023)"
                     />
                     <PaperBox
                         paperTitle="GANを使ったマルチレート画像符号化モデルのための学習戦略の検討"
