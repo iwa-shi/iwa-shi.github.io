@@ -66,8 +66,8 @@ const PublicationArea = () => {
                         paperTitle="Controlling Rate, Distortion, and Realism: Towards a Single Comprehensive Neural Image Compression Model (Oral)"
                         authors="<u>Shoma Iwai</u>, Tomo Miyazaki, and Shinichiro Omachi."
                         others="In Proceedings of IEEE/CVF Winter Conference on Applications of Computer Vision (WACV) , 2024"
-                        // link='https://openaccess.thecvf.com/content/CVPR2021W/CLIC/html/Iwai_Self_Texture_Transfer_Networks_for_Low_Bitrate_Image_Compression_CVPRW_2021_paper.html'
-                        // pdfLink='https://openaccess.thecvf.com/content/CVPR2021W/CLIC/papers/Iwai_Self_Texture_Transfer_Networks_for_Low_Bitrate_Image_Compression_CVPRW_2021_paper.pdf'
+                        link='https://openaccess.thecvf.com/content/WACV2024/html/Iwai_Controlling_Rate_Distortion_and_Realism_Towards_a_Single_Comprehensive_Neural_WACV_2024_paper.html'
+                        pdfLink='https://openaccess.thecvf.com/content/WACV2024/papers/Iwai_Controlling_Rate_Distortion_and_Realism_Towards_a_Single_Comprehensive_Neural_WACV_2024_paper.pdf'
                     />
                     <PaperBox
                         paperTitle="Self Texture Transfer Networks for Low Bitrate Image Compression"
