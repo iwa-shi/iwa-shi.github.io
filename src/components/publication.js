@@ -44,12 +44,21 @@ const PaperBox = ({
     }
     return (
         <Card sx={{ my: 1, px: 2, py: 1, boxShadow: 0, border: 0, borderColor: '#b0bec5' }}>
+            {/* <CardMedia
+                component="img"
+                // height="160"
+                width="30%"
+                image="/wacv24_thumbnail.jpg"
+                alt="random"
+                >
+            </CardMedia> */}
             <Typography variant='subtitle2' fontWeight={700}>{paperTitle}</Typography>
             <Typography variant='body2'>{parse(authors)}</Typography>
             <Typography variant='body2'>{others}</Typography>
             {link ? <Button href={link} sx={buttonStyle} color="secondary" variant={variant} size="small" startIcon={<LinkIcon />}>Link</Button> : <></> }
             {pdfLink ? <Button href={pdfLink} sx={buttonStyle} color="secondary" variant={variant} size="small" startIcon={<PictureAsPdfIcon />}>PDF</Button> : <></> }
             {codeLink ? <Button href={codeLink} sx={buttonStyle} color="secondary" variant={variant} size="small" startIcon={<GitHubIcon />}>Code</Button> : <></> }
+            
         </Card>
     )
 }
@@ -65,8 +74,9 @@ const PublicationArea = () => {
                     <PaperBox
                         paperTitle="Controlling Rate, Distortion, and Realism: Towards a Single Comprehensive Neural Image Compression Model (Oral)"
                         authors="<u>Shoma Iwai</u>, Tomo Miyazaki, and Shinichiro Omachi."
-                        others="In Proceedings of IEEE/CVF Winter Conference on Applications of Computer Vision (WACV) , 2024"
+                        others="In Proceedings of IEEE/CVF Winter Conference on Applications of Computer Vision (WACV) , 2024, pp. 2900-2909"
                         link='https://openaccess.thecvf.com/content/WACV2024/html/Iwai_Controlling_Rate_Distortion_and_Realism_Towards_a_Single_Comprehensive_Neural_WACV_2024_paper.html'
+                        codeLink='https://github.com/iwa-shi/CRDR'
                         pdfLink='https://openaccess.thecvf.com/content/WACV2024/papers/Iwai_Controlling_Rate_Distortion_and_Realism_Towards_a_Single_Comprehensive_Neural_WACV_2024_paper.pdf'
                     />
                     <PaperBox
