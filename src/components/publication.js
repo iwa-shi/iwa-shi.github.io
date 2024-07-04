@@ -32,7 +32,8 @@ const PaperBox = ({
     others,
     link='',
     codeLink='',
-    pdfLink=''
+    pdfLink='',
+    misc=''
 }) => {
     const variant = "outlined"
     // const variant = "contained"
@@ -55,6 +56,7 @@ const PaperBox = ({
             <Typography variant='subtitle2' fontWeight={700}>{paperTitle}</Typography>
             <Typography variant='body2'>{parse(authors)}</Typography>
             <Typography variant='body2'>{others}</Typography>
+            {misc ? <Typography variant='caption'>{misc}</Typography> : <></>}
             {link ? <Button href={link} sx={buttonStyle} color="secondary" variant={variant} size="small" startIcon={<LinkIcon />}>Link</Button> : <></> }
             {pdfLink ? <Button href={pdfLink} sx={buttonStyle} color="secondary" variant={variant} size="small" startIcon={<PictureAsPdfIcon />}>PDF</Button> : <></> }
             {codeLink ? <Button href={codeLink} sx={buttonStyle} color="secondary" variant={variant} size="small" startIcon={<GitHubIcon />}>Code</Button> : <></> }
@@ -71,6 +73,12 @@ const PublicationArea = () => {
                 {/* 国際会議 */}
                 <Box sx={{ my: 2 }}>
                     <Typography variant='h6'>International Conference</Typography>
+                    <PaperBox
+                        paperTitle="Layout-Corrector: Alleviating Layout Sticking Phenomenon in Discrete Diffusion Model"
+                        authors="<u>Shoma Iwai</u>, Atsuki Osanai, Shunsuke Kitada, and Shinichiro Omachi."
+                        others="In Proceedings of European Conference on Computer Vision (ECCV), 2024 (to be appeared)"
+                        misc="*This work was conducted during an internship at LINE Corporation (currently LY Corporation)."
+                    />
                     <PaperBox
                         paperTitle="Controlling Rate, Distortion, and Realism: Towards a Single Comprehensive Neural Image Compression Model (Oral)"
                         authors="<u>Shoma Iwai</u>, Tomo Miyazaki, and Shinichiro Omachi."
@@ -106,6 +114,7 @@ const PublicationArea = () => {
                         paperTitle="学習済みVQGANを活用した深層画像符号化手法の検討"
                         authors="<u>岩井翔真</u>, 宮崎智, 大町真一郎."
                         others="2023年度画像符号化シンポジウム/映像メディア処理シンポジウム（PCSJ/IMPS2023)"
+                        misc="*Best poster award"
                     />
                     <PaperBox
                         paperTitle="GANを使ったマルチレート画像符号化モデルのための学習戦略の検討"
