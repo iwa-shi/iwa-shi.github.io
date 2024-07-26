@@ -70,6 +70,15 @@ const PublicationArea = () => {
         <Paper sx={{px: 5, py: 0.5}} className='left-border'>
             <SectionTitle title="Publication" />
             <Box sx={{m: 1}}>
+                <Box sx={{ my: 2 }}>
+                    <Typography variant='h6'>International Journal</Typography>
+                    <PaperBox
+                        paperTitle="Semantically-Guided Image Compression for Enhanced Perceptual Quality at Extremely Low Bitrates"
+                        authors="<u>Shoma Iwai</u>, Tomo Miyazaki, and Shinichiro Omachi."
+                        others="IEEE Access, vol. 12, pp. 10057 - 10072, 2024."
+                        link='https://ieeexplore.ieee.org/document/10601636'
+                    />
+                </Box>
                 {/* 国際会議 */}
                 <Box sx={{ my: 2 }}>
                     <Typography variant='h6'>International Conference</Typography>
@@ -82,7 +91,7 @@ const PublicationArea = () => {
                     <PaperBox
                         paperTitle="Controlling Rate, Distortion, and Realism: Towards a Single Comprehensive Neural Image Compression Model (Oral)"
                         authors="<u>Shoma Iwai</u>, Tomo Miyazaki, and Shinichiro Omachi."
-                        others="In Proceedings of IEEE/CVF Winter Conference on Applications of Computer Vision (WACV) , 2024, pp. 2900-2909"
+                        others="In Proceedings of IEEE/CVF Winter Conference on Applications of Computer Vision (WACV), pp. 2900-2909, 2024"
                         link='https://openaccess.thecvf.com/content/WACV2024/html/Iwai_Controlling_Rate_Distortion_and_Realism_Towards_a_Single_Comprehensive_Neural_WACV_2024_paper.html'
                         codeLink='https://github.com/iwa-shi/CRDR'
                         pdfLink='https://openaccess.thecvf.com/content/WACV2024/papers/Iwai_Controlling_Rate_Distortion_and_Realism_Towards_a_Single_Comprehensive_Neural_WACV_2024_paper.pdf'
@@ -90,14 +99,14 @@ const PublicationArea = () => {
                     <PaperBox
                         paperTitle="Self Texture Transfer Networks for Low Bitrate Image Compression"
                         authors="<u>Shoma Iwai</u>, Tomo Miyazaki, Yoshihiro Sugaya, and Shinichiro Omachi."
-                        others="In Proceedings of IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) Workshops, 2021, pp. 1901-1905"
+                        others="In Proceedings of IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) Workshops, pp. 1901-1905, 2021"
                         link='https://openaccess.thecvf.com/content/CVPR2021W/CLIC/html/Iwai_Self_Texture_Transfer_Networks_for_Low_Bitrate_Image_Compression_CVPRW_2021_paper.html'
                         pdfLink='https://openaccess.thecvf.com/content/CVPR2021W/CLIC/papers/Iwai_Self_Texture_Transfer_Networks_for_Low_Bitrate_Image_Compression_CVPRW_2021_paper.pdf'
                     />
                     <PaperBox
                         paperTitle="Fidelity-controllable Extreme Image Compression with Generative Adversarial Networks (Oral)"
                         authors="<u>Shoma Iwai</u>, Tomo Miyazaki, Yoshihiro Sugaya, and Shinichiro Omachi."
-                        others="In Proceedings of the 25th International Conference on Pattern Recognition (ICPR), 2020, pp. 8235-8242"
+                        others="In Proceedings of the 25th International Conference on Pattern Recognition (ICPR), pp. 8235-8242, 2020"
                         link='https://arxiv.org/abs/2008.10314'
                         codeLink='https://github.com/iwa-shi/fidelity_controllable_compression'
                         pdfLink='https://arxiv.org/pdf/2008.10314.pdf'
