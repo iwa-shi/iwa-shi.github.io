@@ -60,7 +60,6 @@ const PaperBox = ({
             {link ? <Button href={link} sx={buttonStyle} color="secondary" variant={variant} size="small" startIcon={<LinkIcon />}>Link</Button> : <></> }
             {pdfLink ? <Button href={pdfLink} sx={buttonStyle} color="secondary" variant={variant} size="small" startIcon={<PictureAsPdfIcon />}>PDF</Button> : <></> }
             {codeLink ? <Button href={codeLink} sx={buttonStyle} color="secondary" variant={variant} size="small" startIcon={<GitHubIcon />}>Code</Button> : <></> }
-            
         </Card>
     )
 }
@@ -119,6 +118,23 @@ const PublicationArea = () => {
                 </Box>
                 <Box sx={{ my: 2 }}>
                     <Typography variant='h6'>Domestic Conference</Typography>
+                    <PaperBox
+                        paperTitle="Layout-Corrector: Alleviating Layout Sticking Phenomenon in Discrete Diffusion Model (Oral)"
+                        authors="<u>岩井翔真</u>, 長内淳樹, 北田俊輔, 大町真一郎."
+                        others="画像の認識・理解シンポジウム MIRU2024"
+                        misc="*Student Encouragement Award"
+                    />
+                    <PaperBox
+                        paperTitle="画像圧縮におけるVQGAN活用のための双条件付き学習 (Oral)"
+                        authors="<u>岩井翔真</u>, 宮崎智, 大町真一郎."
+                        others="画像の認識・理解シンポジウム MIRU2024"
+                        misc="*Student Encouragement Award"
+                    />
+                    <PaperBox
+                        paperTitle="GANを使ったマルチレート画像符号化モデルのための学習戦略の検討"
+                        authors="<u>岩井翔真</u>, 宮崎智, 大町真一郎."
+                        others="画像の認識・理解シンポジウム MIRU2024"
+                    />
                     <PaperBox
                         paperTitle="学習済みVQGANを活用した深層画像符号化手法の検討"
                         authors="<u>岩井翔真</u>, 宮崎智, 大町真一郎."
