@@ -33,7 +33,8 @@ const PaperBox = ({
     link='',
     codeLink='',
     pdfLink='',
-    misc=''
+    misc='',
+    slideLink=''
 }) => {
     const variant = "outlined"
     // const variant = "contained"
@@ -56,10 +57,11 @@ const PaperBox = ({
             <Typography variant='subtitle2' fontWeight={700}>{paperTitle}</Typography>
             <Typography variant='body2'>{parse(authors)}</Typography>
             <Typography variant='body2'>{others}</Typography>
-            {misc ? <Typography variant='caption'>{misc}</Typography> : <></>}
             {link ? <Button href={link} sx={buttonStyle} color="secondary" variant={variant} size="small" startIcon={<LinkIcon />}>Link</Button> : <></> }
             {pdfLink ? <Button href={pdfLink} sx={buttonStyle} color="secondary" variant={variant} size="small" startIcon={<PictureAsPdfIcon />}>PDF</Button> : <></> }
             {codeLink ? <Button href={codeLink} sx={buttonStyle} color="secondary" variant={variant} size="small" startIcon={<GitHubIcon />}>Code</Button> : <></> }
+            {slideLink ? <Button href={slideLink} sx={buttonStyle} color="secondary" variant={variant} size="small" startIcon={<LinkIcon />}>Slide</Button> : <></> }
+            {misc ? <Typography variant='caption'>{misc}</Typography> : <></>}
         </Card>
     )
 }
@@ -122,6 +124,7 @@ const PublicationArea = () => {
                         paperTitle="Layout-Corrector: Alleviating Layout Sticking Phenomenon in Discrete Diffusion Model (Oral)"
                         authors="<u>岩井翔真</u>, 長内淳樹, 北田俊輔, 大町真一郎."
                         others="画像の認識・理解シンポジウム MIRU2024"
+                        slideLink='https://speakerdeck.com/lycorptech_jp/miru2024-layout-corrector'
                         misc="*Student Encouragement Award"
                     />
                     <PaperBox

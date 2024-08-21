@@ -33,7 +33,7 @@ const ResearchArea = () => {
             He is a third-year PhD student at Tohoku University, specializing in <span className='green-font bold'>Learned Image Compression</span> at <Link href="http://www.iic.ecei.tohoku.ac.jp/" target="_blank" color="inherit">Image Information Communication Lab</Link>, under the supervision of <Link href="http://www.iic.ecei.tohoku.ac.jp/~machi/index-e.html" target="_blank" color="inherit">Prof. Shinichiro Omachi</Link>.
             </Typography>
             <Typography variant='body1'>
-            He is a recipient of the <span className='green-font bold'>JSPS Research Fellowship for Young Scientists (DC2)</span> and is also a member of <Link href='https://www.aie.tohoku.ac.jp/english/greeting/' color="inherit">AIE WISE Program for AI Electronics</Link>.
+            He is a recipient of the <span className='green-font bold'>JSPS Research Fellowship for Young Scientists (学振DC2)</span> and is also a member of <Link href='https://www.aie.tohoku.ac.jp/english/greeting/' color="inherit">AIE WISE Program for AI Electronics</Link>.
             </Typography>
             </Box>
             <Box sx={{m: 1}}>
