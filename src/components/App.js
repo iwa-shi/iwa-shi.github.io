@@ -51,18 +51,19 @@ function App() {
         <MainStyle>
         {/* <Container maxWidth={false} id="containerElement" sx={{ px: 5 }}> */}
         {/* <Container maxWidth="100%" id="containerElement" sx={{ m: 0, p:0 }}> */}
-        <Box sx={{pb: 20}}>
-          <ClipLeftDown>
-            <ProfileArea></ProfileArea>
-          </ClipLeftDown>
-          <Stack sx={{maxWidth: 'md', mx: 'auto', px: 2, pl: 5}} spacing={4}>
-            <ResearchArea />
-            <EducationArea />
-            <PublicationArea />
-            <WorkExperienceArea />
-            <AwardArea />
-            <SkillArea />
-            <OthersArea />
+        <Box sx={{pt: 4, pb: 20, px: {xs: 0, sm: 2}}}>
+          {/* <ClipLeftDown> */}
+            {/* <ProfileArea></ProfileArea> */}
+          {/* </ClipLeftDown> */}
+          <Stack sx={{maxWidth: 'md', mx: 'auto', px: {sm: 3, xs: 1.5}, pl: {sm: 3, xs: 1.5}}} spacing={4}>
+            <ProfileArea />
+            <ResearchArea number="01"/>
+            <EducationArea number="02" />
+            <PublicationArea number="03" />
+            <WorkExperienceArea number="04" />
+            <AwardArea number="05" />
+            <SkillArea number="06" />
+            <OthersArea number="07" />
           </Stack>
         </Box>
           

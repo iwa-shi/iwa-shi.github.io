@@ -24,53 +24,78 @@ import GroupsIcon from '@mui/icons-material/Groups';
 import SectionTitle from './sectionTitle';
 import Link from '@mui/material/Link';
 import LinkIcon from '@mui/icons-material/Link';
+import AreaContainer from './areaContainer';
 
 
-const AwardArea = () => {
+const AwardBox = ({
+    title,
+    body,
+    link,
+}) => {
     const variant = "outlined"
     // const variant = "contained"
     // const variant = "text"
     const buttonStyle = {
-        'px': 1.0,
-        'py': 0.2,
+        'px': 1.5,
+        'py': 0.05,
+        'mt': 0.5,
+        'border-radius': '100vh',
         'mr': 1.0
     }
+    return (
+        // <Card sx={{ my: 1, px: 2, py: 1, boxShadow: 0, border: 1, borderColor: '#b0bec5', borderRadius: 0 }}>
+        <Card sx={{ my: 1.5, px: 2, py: 1.5, boxShadow: 0, border: 1, borderColor: '#222', borderRadius: 0 }}>
+            {/* <CardMedia
+                component="img"
+                // height="160"
+                width="30%"
+                image="/wacv24_thumbnail.jpg"
+                alt="random"
+                >
+            </CardMedia> */}
+            <Typography variant='subtitle2' fontWeight={700} color='#222'>{title}</Typography>
+            <Typography variant='body2'>{body}</Typography>
+            {link ? <Button href={link} sx={buttonStyle} color="black" variant={variant} size="small" startIcon={<LinkIcon />}>Link</Button> : <></> }
+        </Card>
+    )
+}
+
+const AwardArea = (props) => {
     const linkMiru22 = "https://sites.google.com/view/miru2022/home/award?authuser=0";
     const linkMiru23 = "http://cvim.ipsj.or.jp/MIRU2023/award/";
     const linkPcsj23 = "https://www.pcsj-imps.org/archive/2023awards.html";
     const linkMiru24 = "https://miru-committee.github.io/miru2024/author/award/";
     return (
-        <Paper sx={{px: 5, py: 0.5}} className='left-border'>
-            <SectionTitle title='Award' />
-            <Box sx={{m: 1, my: 2}}>
-                <Typography variant='subtitle1'>学生奨励賞 (Student Encouragement Award)</Typography>
-                <Typography variant='body2'>画像の認識・理解シンポジウム MIRU2024, August 2024</Typography> 
-                <Button href={linkMiru24} sx={buttonStyle} color="secondary" variant={variant}  size="small" startIcon={<LinkIcon />}>Link</Button>
-            </Box>
-            <Box sx={{m: 1, my: 2}}>
-                <Typography variant='subtitle1'>ベストポスター賞 (Best Poster Award)</Typography>
-                <Typography variant='body2'>画像符号化シンポジウム / 映像メディア処理シンポジウム PCSJ/IMPS2023, November 2023</Typography> 
-                <Button href={linkPcsj23} sx={buttonStyle} color="secondary" variant={variant}  size="small" startIcon={<LinkIcon />}>Link</Button>
-            </Box>
-            <Box sx={{m: 1, my: 2}}>
-                <Typography variant='subtitle1'>論文評価貢献賞 -ジュニア評価委員 (Outstanding Junior Reviewer Award)</Typography>
-                <Typography variant='body2'>画像の認識・理解シンポジウム MIRU2023, July 2023</Typography> 
-                <Button href={linkMiru23} sx={buttonStyle} color="secondary" variant={variant}  size="small" startIcon={<LinkIcon />}>Link</Button>
-            </Box>
-            <Box sx={{m: 1, my: 2}}>
-                <Typography variant='subtitle1'>論文評価貢献賞 -ジュニア評価委員 (Outstanding Junior Reviewer Award)</Typography>
-                <Typography variant='body2'>画像の認識・理解シンポジウム MIRU2022, July 2022</Typography> 
-                <Button href={linkMiru22} sx={buttonStyle} color="secondary" variant={variant}  size="small" startIcon={<LinkIcon />}>Link</Button>
-            </Box>
-            <Box sx={{m: 1, my: 2}}>
-                <Typography variant='subtitle1'>Outstanding Student Award (Master's Course)</Typography>
-                <Typography variant='body2'>Group of Electrical Engineering, Communication Engineering, Electronic Engineering, and Information Engineering, Tohoku University, March 2022</Typography>
-            </Box>
-            <Box sx={{m: 1, my: 2}}>
-                <Typography variant='subtitle1'>Presentation Award</Typography>
-                <Typography variant='body2'>MIRU2020 Young Researchers Program, August 2020</Typography>
-            </Box>
-        </Paper>
+        <AreaContainer title="Award" number={props.number}>
+            <AwardBox
+                title="学生奨励賞 (Student Encouragement Award)"
+                body="画像の認識・理解シンポジウム MIRU2024, August 2024"
+                link={linkMiru24}
+            />
+            <AwardBox
+                title="ベストポスター賞 (Best Poster Award)"
+                body="画像符号化シンポジウム / 映像メディア処理シンポジウム PCSJ/IMPS2023, November 2023"
+                link={linkPcsj23}
+            />
+            <AwardBox
+                title="論文評価貢献賞 -ジュニア評価委員 (Outstanding Junior Reviewer Award)"
+                body="画像の認識・理解シンポジウム MIRU2023, July 2023"
+                link={linkMiru23}
+            />
+            <AwardBox
+                title="論文評価貢献賞 -ジュニア評価委員 (Outstanding Junior Reviewer Award)"
+                body="画像の認識・理解シンポジウム MIRU2022, July 2022"
+                link={linkMiru22}
+            />
+            <AwardBox
+                title="Outstanding Student Award (Master's Course)"
+                body="Group of Electrical Engineering, Communication Engineering, Electronic Engineering, and Information Engineering, Tohoku University, March 2022"
+            />
+            <AwardBox
+                title="Presentation Award"
+                body="MIRU2020 Young Researchers Program, August 2020"
+            />
+        </AreaContainer>
     )
 }
 

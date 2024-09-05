@@ -23,9 +23,10 @@ import { Email, Google } from '@mui/icons-material';
 import GroupsIcon from '@mui/icons-material/Groups';
 import SectionTitle from './sectionTitle';
 import LinkIcon from '@mui/icons-material/Link';
+import AreaContainer from './areaContainer';
 
 
-const OthersArea = () => {
+const OthersArea = (props) => {
     const imgStyle = {
         width: '80%'
     }
@@ -34,22 +35,27 @@ const OthersArea = () => {
     // const variant = "contained"
     // const variant = "text"
     const buttonStyle = {
-        'px': 1.0,
-        'mr': 1.0
+        'px': 1.5,
+        'py': 0.05,
+        'border-radius': '100vh',
+        mt: 1,
+        // 'mr': 1.0,
+        // "ml": 1.0
     }
     return (
-        <Paper sx={{px: 5, py: 0.5}} className='left-border'>
-            <SectionTitle title='Others' />
+        <AreaContainer title='Others' number={props.number}>
             <Box sx={{m: 1}}>
-                <Box display='flex' gap={1}>
+                <Box display='flex'>
                     <Typography variant='subtitle1'>Paper Summary (in Japanese)</Typography>
-                    <Button href={paperLink} sx={buttonStyle} color="secondary" variant={variant}  size="small" startIcon={<LinkIcon />}>Link</Button>
                 </Box>
-                {/* <Typography variant='body2'>Summaries of <b>300+ papers</b> that I read can be found <Link href='https://github.com/iwa-shi/paper_memo' color='inherit'>here</Link>.</Typography> */}
                 <Typography variant='body2'>Summaries of <b>300+ papers</b> that I read.</Typography>
-                <img style={imgStyle} src="/paper_summary_thumbnail.jpeg" className='paperMemo'></img>
+                <Button href={paperLink} sx={buttonStyle} color="black" variant={variant} size="small" startIcon={<LinkIcon />}>Link</Button>
+                {/* <Typography variant='body2'>Summaries of <b>300+ papers</b> that I read can be found <Link href='https://github.com/iwa-shi/paper_memo' color='inherit'>here</Link>.</Typography> */}
+                <Box sx={{mt: 1}}>
+                    <img style={imgStyle} src="/paper_summary_thumbnail.jpeg" className='paperMemo'></img>
+                </Box>
             </Box>
-        </Paper>
+        </AreaContainer>
     )
 }
 

@@ -1,14 +1,46 @@
 .profileimg {
   width: 100%;
+  /* border-radius: 5%; */
+  border-radius: 50%;
+  object-fit: cover;
+  /* border: 1px #222 solid; */
+  /* box-shadow: 3px 3px #bfff7f; */
 }
 
 .left-border {
-  border-left: 3px #eee solid;
+  /* border-left: 3px #eee solid; */
+  border-left: 1.5px #222 solid;
+  border-bottom: 2px #222 solid;
   border-radius: 0;
 }
 
+.all-border {
+  /* border-left: 3px #eee solid; */
+  /* border: 1.5px #015030 solid; */
+  border-left: 1.5px #222 solid;
+  border-bottom: 1.5px #222 solid;
+  border-radius: 0;
+  /* background-position: 50% 50%; */
+  /* background-image:
+  repeating-linear-gradient(
+    90deg,
+    #ddd ,
+    #ddd 1px,
+    transparent 1px,
+    transparent 40px
+  ),
+  repeating-linear-gradient(
+    0deg,
+    #ddd ,
+    #ddd 1px,
+    transparent 1px,
+    transparent 40px
+  ); */
+}
+
 .title-marker {
-  background:linear-gradient(transparent 65%, #bfff7f 65%);
+  /* background:linear-gradient(transparent 65%, #bfff7f 65%); */
+  /* background:linear-gradient(transparent 65%, #a5efce 65%); */
 }
 
 .Block {
@@ -42,10 +74,13 @@
   height: 100%;
   margin: 0 1px;
   background-color: #eee;
+  /* background-color: #fff; */
   border-radius: 3px;
 }
 .cell-on {
-  background-color: #046941;
+  /* background-color: #046941; */
+  background-color: #333;
+  /* background-color: #015030; */
 }
 
 .atcoder-blue {
@@ -58,7 +93,6 @@
 }
 
 .prof-link {
-  color: #333;
   text-decoration: none;
 }
 
@@ -76,7 +110,7 @@
   background: #fff;
 }
 
-.prof-link-box:after {
+/* .prof-link-box:after {
   content: "";
   width: 100%;
   height: 100%;
@@ -89,4 +123,4 @@
 .prof-link-box:hover:before {
   transition: 0.4s;
   left: 100%;
-}
+} */

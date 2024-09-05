@@ -22,29 +22,52 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import { Email, Google } from '@mui/icons-material';
 import GroupsIcon from '@mui/icons-material/Groups';
 import SectionTitle from './sectionTitle';
+import AreaContainer from './areaContainer';
 
 
-const WorkExperienceArea = () => {
+const WorkExperienceBox = ({
+    position,
+    title,
+    period,
+}) => {
     return (
-        <Paper sx={{px: 5, py: 0.5}} className='left-border'>
-            <SectionTitle title='Work Experience' />
-            <Box sx={{m: 1}}>
-                <Typography variant='subtitle1'>Research Assistant: Tohoku University</Typography>
-                <Typography variant='body2'>April 2021 - Present</Typography>
+        // <Box sx={{m: 1}}>
+        <Card sx={{ my: 1.0, px: 2, py: 1.0, boxShadow: 0, border: 1, borderColor: '#222', borderRadius: 0 }}>
+            <Box sx={{display: 'flex'}}>
+                <Typography variant='body1'>{position}:</Typography>
+                <Typography sx={{mx: 0.5}} variant='subtitle1'>{title}</Typography>
             </Box>
-            <Box sx={{m: 1}}>
-                <Typography variant='subtitle1'>R&D Internship: LINE Corporation</Typography>
-                <Typography variant='body2'>August 2023 - September 2023</Typography>
-            </Box>
-            <Box sx={{m: 1}}>
-                <Typography variant='subtitle1'>R&D Internship: Huawei Japan Tokyo Laboratory</Typography>
-                <Typography variant='body2'>August 2022 - November 2022</Typography>
-            </Box>
-            <Box sx={{m: 1}}>
-                <Typography variant='subtitle1'>R&D Internship: Sony Group Corporation</Typography>
-                <Typography variant='body2'>August 2020 - September 2020</Typography>
-            </Box>
-        </Paper>
+            <Typography variant='body2'>{period}</Typography>
+        </Card>
+        // </Box>
+    )
+}
+
+
+const WorkExperienceArea = (props) => {
+    return (
+        <AreaContainer title="Work Experience" number={props.number}>
+            <WorkExperienceBox
+                position="Research Assistant"
+                title="Tohoku University"
+                period="April 2021 - Present"
+            />
+            <WorkExperienceBox
+                position="R&D Internship"
+                title="LINE Corporation"
+                period="August 2023 - September 2023"
+            />
+            <WorkExperienceBox
+                position="R&D Internship"
+                title="Huawei Japan Tokyo Laboratory"
+                period="August 2022 - November 2022"
+            />
+            <WorkExperienceBox
+                position="R&D Internship"
+                title="Sony Group Corporation"
+                period="August 2020 - September 2020"
+            />
+        </AreaContainer>
     )
 }
 

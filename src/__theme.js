@@ -1,4 +1,4 @@
-import { red } from '@mui/material/colors';
+import { red, grey } from '@mui/material/colors';
 import { createTheme } from '@mui/material/styles';
 
 // A custom theme for this app
@@ -7,9 +7,10 @@ const theme = createTheme({
     typography: {
       main: '#707c80',
     },
-    primary: {
-      main: '#556cd6',
-    },
+    primary: grey,
+    // primary: {
+    //   main: '#556cd6',
+    // },
     secondary: {
       main: '#19857b',
     },

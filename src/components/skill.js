@@ -23,6 +23,7 @@ import { Email, Google } from '@mui/icons-material';
 import GroupsIcon from '@mui/icons-material/Groups';
 import InfoOutlinedIcon from '@mui/icons-material/InfoOutlined';
 import SectionTitle from './sectionTitle';
+import AreaContainer from './areaContainer';
 // import Card from '../theme/overrides/Card';
 
 const SkillGraph = ({
@@ -83,10 +84,9 @@ const ToeicBox = () => {
     )
 }
 
-const SkillArea = () => {
+const SkillArea = (props) => {
     return (
-        <Paper sx={{px: 5, py: 0.5}} className='left-border'>
-            <SectionTitle title="Skills" />
+        <AreaContainer title="Skills" number={props.number}>
             <Grid container sx={{ mx: 1, alignItems: 'stretch'}} spacing={1}>
                 <Grid item xs={6} md={3}>
                     <SkillBox 
@@ -173,7 +173,7 @@ const SkillArea = () => {
             <Box sx={{m: 1, mt: 2}}>
                 <ToeicBox />
             </Box>
-        </Paper>
+        </AreaContainer>
     )
 }
 

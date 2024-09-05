@@ -22,36 +22,45 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import { Email, Google } from '@mui/icons-material';
 import GroupsIcon from '@mui/icons-material/Groups';
 import SectionTitle from './sectionTitle';
+import AreaContainer from './areaContainer';
 
 const EducationBox = ({
     title,
+    period,
     body,
 }) => {
     return (
-        <Box sx={{m: 1}}>
-            <Typography variant='subtitle1'>{title}</Typography>
+        // <Box sx={{m: 1}}>
+        <Card sx={{ my: 1.5, px: 2, py: 1.0, boxShadow: 0, border: 1, borderColor: '#222', borderRadius: 0 }}>
+            <Box sx={{display: 'flex'}}>
+                <Typography variant='subtitle1'>{title}</Typography>
+                <Typography sx={{mx: 1}} variant='body2'>{period}</Typography>
+            </Box>
             <Typography variant='body2'>{body}</Typography>
-        </Box>
+        </Card>
+        // </Box>
     )
 }
 
-const EducationArea = () => {
+const EducationArea = (props) => {
     return (
-        <Paper sx={{px: 5, py: 0.5}} className='left-border'>
-            <SectionTitle title="Education" />
+        <AreaContainer title="Education" number={props.number}>
             <EducationBox 
-                title="PhD in Engineering, April 2022 - Present"
+                title="PhD in Engineering"
+                period="April 2022 - Present"
                 body="Department of Communication Engineering, Graduate School of Engineering, Tohoku University"
             />
             <EducationBox 
-                title="M.S. in Engineering, April 2020 - March 2022"
+                title="M.S. in Engineering"
+                period="April 2020 - March 2022"
                 body="Department of Communication Engineering, Graduate School of Engineering, Tohoku University"
             />
             <EducationBox 
-                title="B.S. in Engineering, April 2016 - March 2020"
+                title="B.S. in Engineering"
+                period="April 2016 - March 2020"
                 body="Department of Electrical, Information and Physics Engineering, Tohoku University"
             />
-        </Paper>
+        </AreaContainer>
     )
 }
 

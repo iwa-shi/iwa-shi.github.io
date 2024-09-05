@@ -22,27 +22,26 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import { Email, Google } from '@mui/icons-material';
 import GroupsIcon from '@mui/icons-material/Groups';
 import SectionTitle from './sectionTitle';
+import AreaContainer from './areaContainer';
 
-
-const ResearchArea = () => {
+const ResearchArea = ( props ) => {
     return (
-        <Paper sx={{px: 5, py: 0.5}} className='left-border'>
-            <SectionTitle title="Study and Research" />
-            <Box sx={{m: 1}}>
-            <Typography variant='body1'>
-            He is a third-year PhD student at Tohoku University, specializing in <span className='green-font bold'>Learned Image Compression</span> at <Link href="http://www.iic.ecei.tohoku.ac.jp/" target="_blank" color="inherit">Image Information Communication Lab</Link>, under the supervision of <Link href="http://www.iic.ecei.tohoku.ac.jp/~machi/index-e.html" target="_blank" color="inherit">Prof. Shinichiro Omachi</Link>.
-            </Typography>
-            <Typography variant='body1'>
-            He is a recipient of the <span className='green-font bold'>JSPS Research Fellowship for Young Scientists (学振DC2)</span> and is also a member of <Link href='https://www.aie.tohoku.ac.jp/english/greeting/' color="inherit">AIE WISE Program for AI Electronics</Link>.
-            </Typography>
+        <AreaContainer title="Study and Research" number={props.number}>
+            <Box sx={{ m: 1 }}>
+                <Typography variant='body1'>
+                    He is a third-year PhD student at Tohoku University, specializing in <span className='green-font bold'>Learned Image Compression</span> at <Link href="http://www.iic.ecei.tohoku.ac.jp/" target="_blank" color="inherit">Image Information Communication Lab</Link>, under the supervision of <Link href="http://www.iic.ecei.tohoku.ac.jp/~machi/index-e.html" target="_blank" color="inherit">Prof. Shinichiro Omachi</Link>.
+                </Typography>
+                <Typography variant='body1'>
+                    He is a recipient of the <span className='green-font bold'>JSPS Research Fellowship for Young Scientists (学振DC2)</span> and is also a member of <Link href='https://www.aie.tohoku.ac.jp/english/greeting/' color="inherit">AIE WISE Program for AI Electronics</Link>.
+                </Typography>
             </Box>
-            <Box sx={{m: 1}}>
-            <Typography variant='subtitle1'>Interests</Typography>
-            <Typography variant='body2'>
-            Machine Learning, Computer Vision, Image Compression, Generative Models
-            </Typography>
+            <Box sx={{ m: 1 }}>
+                <Typography variant='subtitle1'>Interests</Typography>
+                <Typography variant='body2'>
+                    Machine Learning, Computer Vision, Image Compression, Generative Models
+                </Typography>
             </Box>
-        </Paper>
+        </AreaContainer>
     )
 }
 
