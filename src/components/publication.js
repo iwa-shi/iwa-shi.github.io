@@ -77,6 +77,7 @@ const PaperInfo = ({
     pdfLink='',
     misc='',
     slideLink='',
+    projectPage='',
 }) => {
     const variant = "outlined"
     // const variant = "contained"
@@ -94,10 +95,11 @@ const PaperInfo = ({
             <Typography variant='body2'>{parse(authors)}</Typography>
             <Typography variant='body2'>{others}</Typography>
             {link ? <Button href={link} sx={buttonStyle} color="black" variant={variant} size="small" startIcon={<LinkIcon />}>Link</Button> : <></> }
+            {projectPage ? <Button href={projectPage} sx={buttonStyle} color="black" variant={variant} size="small" startIcon={<LinkIcon />}>Project Page</Button> : <></> }
             {pdfLink ? <Button href={pdfLink} sx={buttonStyle} color="black" variant={variant} size="small" startIcon={<PictureAsPdfIcon />}>PDF</Button> : <></> }
             {codeLink ? <Button href={codeLink} sx={buttonStyle} color="black" variant={variant} size="small" startIcon={<GitHubIcon />}>Code</Button> : <></> }
             {slideLink ? <Button href={slideLink} sx={buttonStyle} color="black" variant={variant} size="small" startIcon={<LinkIcon />}>Slide</Button> : <></> }
-            {misc ? <Typography variant='caption'>{misc}</Typography> : <></>}
+            {misc ? <Box><Typography variant='caption'>{misc}</Typography></Box> : <></>}
         </Box>
     )
 }
@@ -112,7 +114,8 @@ const PaperBox = ({
     misc='',
     slideLink='',
     number='',
-    thumbnail=''
+    thumbnail='',
+    projectPage='',
 }) => {
     
     const pl = thumbnail ? 0 : 3.5
@@ -132,6 +135,7 @@ const PaperBox = ({
                     misc={misc}
                     slideLink={slideLink}
                     number={number}
+                    projectPage={projectPage}
                 />
             </Box>
             {number ? <NumberBox number={number}></NumberBox> : <></>}
@@ -160,11 +164,13 @@ const PublicationArea = (props) => {
                     <PaperBox
                         paperTitle="Layout-Corrector: Alleviating Layout Sticking Phenomenon in Discrete Diffusion Model"
                         authors="<u>Shoma Iwai</u>, Atsuki Osanai, Shunsuke Kitada, and Shinichiro Omachi."
-                        others="In Proceedings of European Conference on Computer Vision (ECCV), 2024 (to be appeared)"
-                        misc="*This work was conducted during an internship at LINE Corporation (currently LY Corporation)."
+                        others="In Proceedings of European Conference on Computer Vision (ECCV), 2024"
+                        misc="*This work was conducted during an internship at LINE Corporation (currently LY Corporation). Code will be released soon."
+                        projectPage='https://iwa-shi.github.io/Layout-Corrector-Project-Page/'
+                        pdfLink='https://arxiv.org/pdf/2409.16689'
                         number='5'
                         thumbnail='/thumbnail/eccv2024_layout_corrector.png'
-                    />
+                        />
                     <PaperBox
                         paperTitle="Controlling Rate, Distortion, and Realism: Towards a Single Comprehensive Neural Image Compression Model (Oral)"
                         authors="<u>Shoma Iwai</u>, Tomo Miyazaki, and Shinichiro Omachi."
