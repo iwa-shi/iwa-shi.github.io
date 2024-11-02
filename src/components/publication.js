@@ -165,8 +165,9 @@ const PublicationArea = (props) => {
                         paperTitle="Layout-Corrector: Alleviating Layout Sticking Phenomenon in Discrete Diffusion Model"
                         authors="<u>Shoma Iwai</u>, Atsuki Osanai, Shunsuke Kitada, and Shinichiro Omachi."
                         others="In Proceedings of European Conference on Computer Vision (ECCV), 2024"
-                        misc="*This work was conducted during an internship at LINE Corporation (currently LY Corporation). Code will be released soon."
+                        misc="*This work was conducted during an internship at LINE Corporation (currently LY Corporation)."
                         projectPage='https://iwa-shi.github.io/Layout-Corrector-Project-Page/'
+                        codeLink='https://github.com/line/Layout-Corrector'
                         pdfLink='https://arxiv.org/pdf/2409.16689'
                         number='5'
                         thumbnail='/thumbnail/eccv2024_layout_corrector.png'
