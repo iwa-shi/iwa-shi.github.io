@@ -107,6 +107,7 @@ const ProfileArea = () => {
                             {/* <img src="/profile_miru2024.jpg" className='profileimg'></img> */}
                             {/* <img src="/profile_circle_mini.jpg" className='profileimg'></img> */}
                             <img src="/profile_main.jpg" className='profileimg'></img>
+                            {/* <img src="/profile_20241102.png" className='profileimg'></img> */}
                             {/* <img src="/profile_rect.jpg" style={{width: '100%'}}></img> */}
                         </Box>
                         
@@ -119,7 +120,7 @@ const ProfileArea = () => {
                                 </Grid>
                             
                             <Grid item xs={6}>
-                                <InfoBox text="Google Scholer" icontype="google" link='https://scholar.google.com/citations?user=jCVwlyIAAAAJ&'/>
+                                <InfoBox text="Google Scholar" icontype="google" link='https://scholar.google.com/citations?user=jCVwlyIAAAAJ&'/>
                             </Grid>
                             <Grid item xs={6}>
                                 <InfoBox text="Email" icontype="email" link='mailto:shoma.iwai.s4@dc.tohoku.ac.jp'/>
