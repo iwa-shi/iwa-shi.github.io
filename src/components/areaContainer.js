@@ -58,9 +58,11 @@ const AreaContainer = (props) => {
         borderLeft: 1.5,
         // borderBottom: 1.5,
         // borderLeft: 2,
-        borderBottom: 2,
+        borderBottom: 1.5,
         borderColor: '#111',
         borderRadius: 0,
+        // borderRadius: '0 5% 0 %',
+        borderBottomLeftRadius: 10,
     }
     const numberStyle = {
         position: 'sticky',

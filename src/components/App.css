@@ -1,7 +1,14 @@
 .profileimg {
   width: 100%;
-  /* border-radius: 5%; */
-  border-radius: 50%;
+  /* border-radius: 20% 20% 20% 20%; */
+  /* border-radius: 50%; */
+  border-radius: 20px;
+  /* border-top-left-radius: 20px; */
+  /* border-left: 1.5px #222 solid; */
+  /* border-bottom: 2px #222 solid; */
+  /* border-radius: 0; */
+  /* border: 6px #444 solid; */
+  /* border-radius: 50%; */
   object-fit: cover;
   /* border: 1px #222 solid; */
   /* box-shadow: 3px 3px #bfff7f; */
