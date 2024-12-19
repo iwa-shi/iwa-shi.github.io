@@ -51,10 +51,6 @@ const InfoBox = ({
         border: 1,
         borderRadius: '100vh',
         backgroundColor: '#fff',
-        // backgroundColor: '#222',
-        // color: '#fff',
-        // fontWeight: 700,
-        // pb: 1,
     }
     return (
         <a href={link} style={{color: palette.text.primary}} className="prof-link">
@@ -68,10 +64,10 @@ const InfoBox = ({
 
 const ProfileImage = () => {
     return (
-        <Box sx={{ width: '30%', maxWidth: {xs: 120, sm: 130}, mx: 0, minWidth: 115,}} className='profileImgBox'>
+        <Box sx={{ width: '30%', maxWidth: {xs: 120, sm: 130}, mx: 0, minWidth: 110,}} className='profileImgBox'>
             {/* <img src="/profile/profile_miru2024.jpg" className='profileimg'></img> */}
             {/* <img src="/profile/profile_main.jpg" className='profileimg'></img> */}
-            <img src="/profile/profile_mono_006.png" className='profileimg'></img>
+            <img src="/profile/profile_mono_009.png" className='profileimg'></img>
         </Box>
     )
 }
@@ -99,7 +95,6 @@ const LinkArea = () => {
 
 const ProfileArea = () => {
     const boxStyle = {
-        // py: 5,
         pt: 2,
         pb: 2,
         borderLeft: 0,
@@ -109,11 +104,10 @@ const ProfileArea = () => {
         borderRadius: 0,
         borderRight: 1,
         borderTop: 1,
-        // border: 0,
-        borderTopRightRadius: {sm: 30, xs: 30},
+        borderTopRightRadius: {sm: 30, xs: 20},
         borderColor: '#222',
-        pr: {sm: 3, xs: 1},
-        ml: {sm: 5, xs: 2},
+        pr: {sm: 3, xs: 0.5},
+        ml: {sm: 5, xs: 1},
     }
 
     // const gradientBackground = 'linear-gradient(217deg, rgba(255,0,0,.01), rgba(255,0,0,0) 70.71%),linear-gradient(127deg, rgba(0,255,0,.01), rgba(0,255,0,0) 70.71%),linear-gradient(336deg, rgba(0,0,255,.01), rgba(0,0,255,0) 70.71%);'
