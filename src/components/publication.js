@@ -150,6 +150,15 @@ const PublicationArea = (props) => {
                 <Box sx={{ my: 2 }}>
                     <Typography variant='h6'>International Journal</Typography>
                     <PaperBox
+                        paperTitle="Dual-Conditioned Training to Exploit Pre-trained Codebook-based Generative Model in Image Compression"
+                        authors="<u>Shoma Iwai</u>, Tomo Miyazaki, and Shinichiro Omachi."
+                        others="IEEE Access"
+                        link='https://ieeexplore.ieee.org/document/10815956'
+                        codeLink='https://github.com/iwa-shi/DC_VIC'
+                        number='2'
+                        thumbnail='/thumbnail/access2024_dcvic.png'
+                    />
+                    <PaperBox
                         paperTitle="Semantically-Guided Image Compression for Enhanced Perceptual Quality at Extremely Low Bitrates"
                         authors="<u>Shoma Iwai</u>, Tomo Miyazaki, and Shinichiro Omachi."
                         others="IEEE Access, vol. 12, pp. 10057 - 10072, 2024."
